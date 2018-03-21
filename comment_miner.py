@@ -17,8 +17,8 @@ else:
     print("Can't login!")
 
 
-friendly_comment_file = open("friendly_comments", "w")
-celebrity_comment_file = open("celebrity_comments", "w")
+#friendly_comment_file = open("friendly_comments", "w")
+#celebrity_comment_file = open("celebrity_comments", "w")
 #my user id is : 474059646
 
 
@@ -27,7 +27,7 @@ MAX_FOLLOWING_COUNT = 100
 MAX_MEDIA_COUNT = 20
 MAX_COMMENT_COUNT = 10
 TOTAL_USER_COUNT = 20
-SAVE_BACKUP_PERIOD_USER_COUNT = 5
+SAVE_BACKUP_PERIOD_USER_COUNT = 2
 
 def readMediaComments(media_id, target_comments):
     has_more_comments = True
@@ -120,8 +120,11 @@ while total_user_count < TOTAL_USER_COUNT:
 #saving to file
     if(total_user_count % SAVE_BACKUP_PERIOD_USER_COUNT == 0):
         print("total_user_count is :", total_user_count)
-        pickle.dump(all_celebrity_comments, celebrity_comment_file)
-        pickle.dump(all_friendly_comments, friendly_comment_file)
+    print("friendly comments :", all_friendly_comments, file=open("friendly_comments", "w"))
+    print("celeb comments :", all_celebrity_comments, file=open("celebrity_comments", "w"))
+        #pickle.dump(all_celebrity_comments, celebrity_comment_file)
+#pickle.dump(all_friendly_comments, friendly_comment_file)
+
 
 
 print("celeb comments :", all_celebrity_comments)
