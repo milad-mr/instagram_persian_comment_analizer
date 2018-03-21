@@ -23,11 +23,11 @@ else:
 
 
 FOLLOWING_COUNT_CELEBRITY_THRESHOLD = 2000
-MAX_FOLLOWING_COUNT = 100
+MAX_FOLLOWING_COUNT = 30
 MAX_MEDIA_COUNT = 20
-MAX_COMMENT_COUNT = 10
-TOTAL_USER_COUNT = 20
-SAVE_BACKUP_PERIOD_USER_COUNT = 2
+MAX_COMMENT_COUNT = 20
+TOTAL_USER_COUNT = 1000
+SAVE_BACKUP_PERIOD_USER_COUNT = 10
 
 def readMediaComments(media_id, target_comments):
     has_more_comments = True
@@ -84,19 +84,25 @@ all_friendly_comments = []
 
 all_celebrity_comments = []
 
+checked_user = [] #just for check that already checked pr not
 total_user_count = 0
 celebrity_user_count = 0
 normal_user_count = 0
 
 while total_user_count < TOTAL_USER_COUNT:
     media_count = 0
-    total_user_count += 1
     user_id = all_users_pk.pop()
+    if user_id in checked_user:
+        print("user already checked")
+        continue
+    else:
+        checked_user.append(user_id)
+    total_user_count += 1
     all_users_pk = all_users_pk.union(getFollowingsPk(user_id))
     api.getUsernameInfo(user_id)
-    
     user = api.LastJson['user']
     print("username :", user['username'])
+
     user_feed = getLimitedUserFeed(user_id)
     if user['follower_count'] > FOLLOWING_COUNT_CELEBRITY_THRESHOLD :
         celebrity_user_count += 1
