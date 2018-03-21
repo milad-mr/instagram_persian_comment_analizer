@@ -5,7 +5,10 @@
 
 from InstagramAPI import InstagramAPI
 import time
-api = InstagramAPI("miladmohammadrezaei", "joejoe")
+import pickle
+username = str(input("username:"))
+password = str(input("passwors:"))
+api = InstagramAPI(username, password)
 if (api.login()):
     #api.getSelfUserFeed()  # get self user feed
     #   print(api.LastJson)  # print last response JSON
@@ -13,9 +16,18 @@ if (api.login()):
 else:
     print("Can't login!")
 
+
+friendly_comment_file = open("friendly_comments", "w")
+celebrity_comment_file = open("celebrity_comments", "w")
 #my user id is : 474059646
 
 
+FOLLOWING_COUNT_CELEBRITY_THRESHOLD = 2000
+MAX_FOLLOWING_COUNT = 100
+MAX_MEDIA_COUNT = 20
+MAX_COMMENT_COUNT = 10
+TOTAL_USER_COUNT = 20
+SAVE_BACKUP_PERIOD_USER_COUNT = 5
 
 def readMediaComments(media_id, target_comments):
     has_more_comments = True
@@ -30,13 +42,13 @@ def readMediaComments(media_id, target_comments):
         has_more_comments = api.LastJson.get('has_more_comments', False)
         if has_more_comments:
             max_id = api.LastJson.get('next_max_id', '')
-            time.sleep(2)
 
 def getFollowingsPk(user_id):
     next_max_id = True
     followings_pk = set()
     following_count = 0
     while next_max_id and following_count < MAX_FOLLOWING_COUNT:
+        print("following found")
         print (next_max_id)
         # first iteration hack
         if next_max_id is True:
@@ -51,12 +63,20 @@ def getFollowingsPk(user_id):
         next_max_id = api.LastJson.get('next_max_id', '')
     return followings_pk
 
-
-FOLLOWING_COUNT_CELEBRITY_THRESHOLD = 2000
-MAX_FOLLOWING_COUNT = 60
-MAX_MEDIA_COUNT = 10
-MAX_COMMENT_COUNT = 20
-TOTAL_USER_COUNT = 7
+def getLimitedUserFeed(usernameId):
+    user_feed = []
+    next_max_id = ''
+    feed_count = 0
+    while feed_count < MAX_MEDIA_COUNT:
+        api.getUserFeed(usernameId, next_max_id)
+        temp = api.LastJson
+        for item in temp["items"]:
+            user_feed.append(item)
+            feed_count += 1
+        if temp["more_available"] is False:
+            return user_feed
+        next_max_id = temp["next_max_id"]
+    return user_feed
 all_users_pk = set()
 all_users_pk.add("474059646")
 
@@ -77,10 +97,10 @@ while total_user_count < TOTAL_USER_COUNT:
     
     user = api.LastJson['user']
     print("username :", user['username'])
-    api.getTotalUserFeed(user_id)
+    user_feed = getLimitedUserFeed(user_id)
     if user['follower_count'] > FOLLOWING_COUNT_CELEBRITY_THRESHOLD :
         celebrity_user_count += 1
-        for item in api.LastJson['items']:
+        for item in user_feed:
             media_count += 2 #celebrities media should be half of normal peoples/
             print("media count is :" , media_count)
             if media_count > MAX_MEDIA_COUNT:
@@ -88,7 +108,7 @@ while total_user_count < TOTAL_USER_COUNT:
             readMediaComments(str(item['pk']), all_celebrity_comments)
     else:
         normal_user_count += 1
-        for item in api.LastJson['items']:
+        for item in user_feed:
             media_count += 1
             print("media count is :" , media_count)
             if media_count > MAX_MEDIA_COUNT:
@@ -97,8 +117,15 @@ while total_user_count < TOTAL_USER_COUNT:
 
     print("normal users : " , normal_user_count)
     print("celebrity users : ", celebrity_user_count)
+#saving to file
+    if(total_user_count % SAVE_BACKUP_PERIOD_USER_COUNT == 0):
+        print("total_user_count is :", total_user_count)
+        pickle.dump(all_celebrity_comments, celebrity_comment_file)
+        pickle.dump(all_friendly_comments, friendly_comment_file)
+
 
 print("celeb comments :", all_celebrity_comments)
+print("\n\n\n\n\n\n\n\n\n\n\n\n")
 print("friendly comments :", all_friendly_comments)
 print("normal users : " , normal_user_count)
 print("celebrity users : ", celebrity_user_count)
