@@ -1,0 +1,70 @@
+Confusion Matrix, row=true, column=predicted  accuracy=0.8413566739606126 most-frequent-tag baseline=0.8074398249452954
+        label   0   1   2  |total
+  0  friendly  56   . 120  |176
+  1             .   .   .  |0
+  2 celebrity  25   . 713  |738
+
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.691358024691358
+No examples with predicted label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8559423769507803
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.3181818181818182
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9661246612466124
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.43579766536964987
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.9077021005728835
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8413566739606126
+Trial 0 Training NaiveBayesTrainer with 8222 instances
+Trial 0 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer training data accuracy = 0.8936998297251277
+Trial 0 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8107221006564551 most-frequent-tag baseline=0.8074398249452954
+        label   0   1   2  |total
+  0  friendly  73   1 102  |176
+  1             .   .   .  |0
+  2 celebrity  69   1 668  |738
+
+Trial 0 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5140845070422535
+Trial 0 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 0 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8675324675324675
+Trial 0 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4147727272727273
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 0 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9051490514905149
+Trial 0 Trainer NaiveBayesTrainer test data F1(friendly) = 0.4591194968553459
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 0 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8859416445623343
+Trial 0 Trainer NaiveBayesTrainer test data accuracy = 0.8107221006564551
+
+MaxEntTrainer,gaussianPriorVariance=1.0
+Summary. train accuracy mean = 0.9175383118462661 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.8413566739606126 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.691358024691358 stddev = 0.0 stderr = 0.0
+Summary. test precision() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8559423769507803 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.3181818181818182 stddev = 0.0 stderr = 0.0
+Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9661246612466124 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.43579766536964987 stddev = 0.0 stderr = 0.0
+Summary. test f1() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.9077021005728835 stddev = 0.0 stderr = 0.0
+
+NaiveBayesTrainer
+Summary. train accuracy mean = 0.8936998297251277 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.8107221006564551 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.5140845070422535 stddev = 0.0 stderr = 0.0
+Summary. test precision() mean = 0.0 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8675324675324675 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.4147727272727273 stddev = 0.0 stderr = 0.0
+Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9051490514905149 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.4591194968553459 stddev = 0.0 stderr = 0.0
+Summary. test f1() mean = 0.0 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.8859416445623343 stddev = 0.0 stderr = 0.0
