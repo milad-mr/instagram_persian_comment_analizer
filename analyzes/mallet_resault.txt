@@ -1,70 +1,845 @@
-Confusion Matrix, row=true, column=predicted  accuracy=0.8413566739606126 most-frequent-tag baseline=0.8074398249452954
-        label   0   1   2  |total
-  0  friendly  56   . 120  |176
-  1             .   .   .  |0
-  2 celebrity  25   . 713  |738
+Training portion = 0.9
+Unlabeled training sub-portion = 0.0
+Validation portion = 0.0
+Testing portion = 0.09999999999999998
 
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.691358024691358
+-------------------- Trial 0  --------------------
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5748.815170297192 prior=0.5000000000000548) loglikelihood = -57Value (labelProb=4979.8322012052295 prior=1.3020917593817196) loglikelihood = -4Value (labelProb=4628.190802834337 prior=2.2150179682578366) loglikelihood = -46Value (labelProb=4356.796649309284 prior=3.9326426006393316) loglikelihood = -43Value (labelProb=4116.896311686929 prior=8.387235664059467) loglikelihood = -412Value (labelProb=3888.4448414240355 prior=16.512611239592104) loglikelihood = -3Value (labelProb=3669.15770512907 prior=36.796701292356566) loglikelihood = -370Value (labelProb=3393.259806492413 prior=85.12861927324317) loglikelihood = -347Value (labelProb=3130.8415309861584 prior=186.49697579074717) loglikelihood = -3Value (labelProb=2962.3139648956358 prior=257.4795140056982) loglikelihood = -32Value (labelProb=3096.666221917322 prior=363.39370482578164) loglikelihood = -34Value (labelProb=2926.0888555303313 prior=278.0936319342232) loglikelihood = -32Value (labelProb=2851.1125056734727 prior=315.4195266508251) loglikelihood = -31Value (labelProb=2754.0514801870177 prior=361.26830675123364) loglikelihood = -3Value (labelProb=2673.814872427057 prior=394.95391768247197) loglikelihood = -30Value (labelProb=2560.414312264846 prior=429.1108954747781) loglikelihood = -298Value (labelProb=2546.5504234614286 prior=418.62297477593904) loglikelihood = -2Value (labelProb=2440.1334815681257 prior=435.56246118247486) loglikelihood = -2Value (labelProb=2453.242465753934 prior=409.58500754655597) loglikelihood = -28Value (labelProb=2430.7712918893944 prior=384.4170598012717) loglikelihood = -28Value (labelProb=2397.973200401434 prior=380.1159865998201) loglikelihood = -277Value (labelProb=2376.920135758225 prior=381.5702999425193) loglikelihood = -275Value (labelProb=2353.246736891487 prior=390.300498820112) loglikelihood = -2743Value (labelProb=2312.826555898296 prior=396.78268221238255) loglikelihood = -27Value (labelProb=2290.598001209369 prior=403.29180244897356) loglikelihood = -26Value (labelProb=2272.42974661409 prior=411.80471599224944) loglikelihood = -268Value (labelProb=2251.960413466092 prior=419.3611765337051) loglikelihood = -267Value (labelProb=2183.066729651215 prior=447.6210945912519) loglikelihood = -263Value (labelProb=2154.150806789476 prior=479.0140093918152) loglikelihood = -263Value (labelProb=2155.7706190100453 prior=461.91984650544464) loglikelihood = -2Value (labelProb=2114.008212580218 prior=483.5564555614802) loglikelihood = -259Value (labelProb=2111.308393918082 prior=480.8773108701163) loglikelihood = -259Value (labelProb=2098.034448026632 prior=486.5506008221182) loglikelihood = -258Value (labelProb=2097.150558806155 prior=483.487707358744) loglikelihood = -2580Value (labelProb=2088.8227423750177 prior=487.0448851582701) loglikelihood = -25Value (labelProb=2133.6268807740007 prior=508.85190869307536) loglikelihood = -2Value (labelProb=2086.054479085769 prior=489.11793285465006) loglikelihood = -25Value (labelProb=2078.0012240141873 prior=495.0190400027815) loglikelihood = -25Value (labelProb=2073.8906543896496 prior=497.7807928622119) loglikelihood = -25Value (labelProb=2068.7461123945172 prior=501.17706000862194) loglikelihood = -2Value (labelProb=2064.4824464842172 prior=503.94901088737464) loglikelihood = -2Value (labelProb=2055.7202602508382 prior=510.8169917385251) loglikelihood = -25Value (labelProb=2049.2192815101807 prior=515.643491241807) loglikelihood = -256Value (labelProb=2048.374407242819 prior=515.3242359577148) loglikelihood = -256Value (labelProb=2046.8445459070904 prior=515.6240393095479) loglikelihood = -25Value (labelProb=2041.7985268001319 prior=519.2285183287275) loglikelihood = -25Value (labelProb=2032.8316637371174 prior=527.596424244224) loglikelihood = -256Value (labelProb=2031.6541908142588 prior=529.0457246724778) loglikelihood = -25Value (labelProb=2031.713029088696 prior=528.2361410776576) loglikelihood = -255Value (labelProb=2033.1159818963679 prior=526.655698098899) loglikelihood = -2559.771679995267 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2559.9491701663537 newValue: -2559.771679995267
+Value (labelProb=2211.4862412774696 prior=526.8940953394621) loglikelihood = -27Value (labelProb=2034.1866223446084 prior=526.6345378229698) loglikelihood = -25Value (labelProb=2033.1378278114278 prior=526.643867960963) loglikelihood = -255Value (labelProb=2032.9974967471244 prior=526.6494705299446) loglikelihood = -25Value (labelProb=2032.82952276942 prior=526.6352077080843) loglikelihood = -2559.4647304775044 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2559.646967277069 newValue: -2559.4647304775044
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9170518122111408
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8194748358862144 most-frequent-tag baseline=0.7757111597374179
+        label   0   1   2  |total
+  0  friendly  58   . 147  |205
+  1             .   .   .  |0
+  2 celebrity  18   . 691  |709
+
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.7631578947368421
 No examples with predicted label !
 Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8559423769507803
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.3181818181818182
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8245823389021479
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.28292682926829266
 No examples with true label !
 Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9661246612466124
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.43579766536964987
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9746121297602257
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4128113879003559
 No examples with predicted label !
 No examples with true label !
 Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.9077021005728835
-Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8413566739606126
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8933419521654816
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8194748358862144
 Trial 0 Training NaiveBayesTrainer with 8222 instances
 Trial 0 Training NaiveBayesTrainer finished
 No examples with true label !
 No examples with true label !
-Trial 0 Trainer NaiveBayesTrainer training data accuracy = 0.8936998297251277
+Trial 0 Trainer NaiveBayesTrainer training data accuracy = 0.8926052055460958
 Trial 0 Trainer NaiveBayesTrainer Test Data Confusion Matrix
-Confusion Matrix, row=true, column=predicted  accuracy=0.8107221006564551 most-frequent-tag baseline=0.8074398249452954
+Confusion Matrix, row=true, column=predicted  accuracy=0.8030634573304157 most-frequent-tag baseline=0.7757111597374179
         label   0   1   2  |total
-  0  friendly  73   1 102  |176
+  0  friendly  94   . 111  |205
   1             .   .   .  |0
-  2 celebrity  69   1 668  |738
+  2 celebrity  66   3 640  |709
 
-Trial 0 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5140845070422535
+Trial 0 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5875
 Trial 0 Trainer NaiveBayesTrainer test data precision() = 0.0
-Trial 0 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8675324675324675
-Trial 0 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4147727272727273
+Trial 0 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8521970705725699
+Trial 0 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4585365853658537
 No examples with true label !
 Trial 0 Trainer NaiveBayesTrainer test data recall() = 1.0
-Trial 0 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9051490514905149
-Trial 0 Trainer NaiveBayesTrainer test data F1(friendly) = 0.4591194968553459
+Trial 0 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9026798307475318
+Trial 0 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5150684931506849
 No examples with true label !
 Trial 0 Trainer NaiveBayesTrainer test data F1() = 0.0
-Trial 0 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8859416445623343
-Trial 0 Trainer NaiveBayesTrainer test data accuracy = 0.8107221006564551
+Trial 0 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8767123287671234
+Trial 0 Trainer NaiveBayesTrainer test data accuracy = 0.8030634573304157
 
 MaxEntTrainer,gaussianPriorVariance=1.0
-Summary. train accuracy mean = 0.9175383118462661 stddev = 0.0 stderr = 0.0
-Summary. test accuracy mean = 0.8413566739606126 stddev = 0.0 stderr = 0.0
-Summary. test precision(friendly) mean = 0.691358024691358 stddev = 0.0 stderr = 0.0
+Summary. train accuracy mean = 0.9170518122111408 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.8194748358862144 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.7631578947368421 stddev = 0.0 stderr = 0.0
 Summary. test precision() mean = 1.0 stddev = 0.0 stderr = 0.0
-Summary. test precision(celebrity) mean = 0.8559423769507803 stddev = 0.0 stderr = 0.0
-Summary. test recall(friendly) mean = 0.3181818181818182 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8245823389021479 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.28292682926829266 stddev = 0.0 stderr = 0.0
 Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
-Summary. test recall(celebrity) mean = 0.9661246612466124 stddev = 0.0 stderr = 0.0
-Summary. test f1(friendly) mean = 0.43579766536964987 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9746121297602257 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.4128113879003559 stddev = 0.0 stderr = 0.0
 Summary. test f1() mean = 1.0 stddev = 0.0 stderr = 0.0
-Summary. test f1(celebrity) mean = 0.9077021005728835 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.8933419521654816 stddev = 0.0 stderr = 0.0
 
 NaiveBayesTrainer
-Summary. train accuracy mean = 0.8936998297251277 stddev = 0.0 stderr = 0.0
-Summary. test accuracy mean = 0.8107221006564551 stddev = 0.0 stderr = 0.0
-Summary. test precision(friendly) mean = 0.5140845070422535 stddev = 0.0 stderr = 0.0
+Summary. train accuracy mean = 0.8926052055460958 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.8030634573304157 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.5875 stddev = 0.0 stderr = 0.0
 Summary. test precision() mean = 0.0 stddev = 0.0 stderr = 0.0
-Summary. test precision(celebrity) mean = 0.8675324675324675 stddev = 0.0 stderr = 0.0
-Summary. test recall(friendly) mean = 0.4147727272727273 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8521970705725699 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.4585365853658537 stddev = 0.0 stderr = 0.0
 Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
-Summary. test recall(celebrity) mean = 0.9051490514905149 stddev = 0.0 stderr = 0.0
-Summary. test f1(friendly) mean = 0.4591194968553459 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9026798307475318 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.5150684931506849 stddev = 0.0 stderr = 0.0
 Summary. test f1() mean = 0.0 stddev = 0.0 stderr = 0.0
-Summary. test f1(celebrity) mean = 0.8859416445623343 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.8767123287671234 stddev = 0.0 stderr = 0.0
+milads-MacBook-Pro:src milad$ ./p3_mallet_trainer.sh 
+Training portion = 0.9
+Unlabeled training sub-portion = 0.0
+Validation portion = 0.0
+Testing portion = 0.09999999999999998
+
+-------------------- Trial 0  --------------------
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5734.931647700262 prior=0.49999999999984723) loglikelihood = -5Value (labelProb=4962.08446596375 prior=1.305573887536455) loglikelihood = -4963Value (labelProb=4613.698122127748 prior=2.2100481352336123) loglikelihood = -46Value (labelProb=4345.475131747544 prior=3.907580709087708) loglikelihood = -434Value (labelProb=4112.6383975819945 prior=8.164101564924351) loglikelihood = -41Value (labelProb=3898.2345144615556 prior=15.829726140638739) loglikelihood = -3Value (labelProb=3680.7770213246718 prior=35.479182749488956) loglikelihood = -3Value (labelProb=3380.183896549 prior=87.09724880022578) loglikelihood = -3467.2Value (labelProb=3110.2402126776215 prior=191.54471184516083) loglikelihood = -3Value (labelProb=2969.9534168216833 prior=258.1546009902783) loglikelihood = -32Value (labelProb=2863.199756079643 prior=322.9709648750576) loglikelihood = -318Value (labelProb=2808.294459817642 prior=345.81729227741334) loglikelihood = -31Value (labelProb=2756.065834631339 prior=351.5745130860739) loglikelihood = -310Value (labelProb=2718.340003109122 prior=346.0467979602464) loglikelihood = -306Value (labelProb=2644.5922710811546 prior=357.72397717449513) loglikelihood = -3Value (labelProb=2560.9955413938214 prior=426.57080989597364) loglikelihood = -2Value (labelProb=2544.827115023672 prior=400.33153847102506) loglikelihood = -29Value (labelProb=2522.71132928147 prior=405.18260288761934) loglikelihood = -292Value (labelProb=2466.629366564164 prior=436.88901637432826) loglikelihood = -29Value (labelProb=2419.78658183394 prior=461.16065120946223) loglikelihood = -288Value (labelProb=2279.4143872190207 prior=564.104536367051) loglikelihood = -284Value (labelProb=2459.417955065926 prior=678.2152658268699) loglikelihood = -313Value (labelProb=2254.1211814022827 prior=579.7843858611674) loglikelihood = -28Value (labelProb=2238.5987734861874 prior=587.1241394277524) loglikelihood = -28Value (labelProb=2166.1969970710625 prior=630.1539719480819) loglikelihood = -27Value (labelProb=2162.5705056024312 prior=614.8154273038349) loglikelihood = -27Value (labelProb=2166.2900362601517 prior=589.5768888565335) loglikelihood = -27Value (labelProb=2187.690591893641 prior=575.4526166853109) loglikelihood = -276Value (labelProb=2162.6340189371736 prior=582.726053338969) loglikelihood = -274Value (labelProb=2163.0647582262877 prior=558.338731451825) loglikelihood = -272Value (labelProb=2149.2760061571853 prior=544.398553465553) loglikelihood = -269Value (labelProb=2133.370058354629 prior=542.7602642658036) loglikelihood = -267Value (labelProb=2116.322714128487 prior=542.31638842283) loglikelihood = -2658.Value (labelProb=2119.164315514394 prior=526.8291367998985) loglikelihood = -264Value (labelProb=2090.9665831076964 prior=526.2326613068396) loglikelihood = -26Value (labelProb=2087.899767171033 prior=520.0853418922279) loglikelihood = -260Value (labelProb=2135.4822485258464 prior=486.40540310954816) loglikelihood = -2Value (labelProb=2094.3002463169223 prior=505.8382678207894) loglikelihood = -26Value (labelProb=2093.9538157576194 prior=496.9598865175102) loglikelihood = -25Value (labelProb=2090.608592565669 prior=496.0797636956792) loglikelihood = -258Value (labelProb=2087.028253932813 prior=497.53844707175415) loglikelihood = -25Value (labelProb=2079.031382999684 prior=499.483472790944) loglikelihood = -2578Value (labelProb=2076.621062801614 prior=500.2866073367593) loglikelihood = -257Value (labelProb=2072.5275339371656 prior=502.354252317944) loglikelihood = -257Value (labelProb=2065.0328345699427 prior=506.9336830426811) loglikelihood = -25Value (labelProb=2061.328390833994 prior=510.6011741164061) loglikelihood = -2571.9295649504    
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2571.9665176126236 newValue: -2571.9295649504
+Value (labelProb=2644.0532607816785 prior=512.0365490478912) loglikelihood = -31Value (labelProb=2061.8372401913507 prior=510.6997116095554) loglikelihood = -25Value (labelProb=2059.686335540521 prior=510.6491928629808) loglikelihood = -257Value (labelProb=2059.0476152079486 prior=510.6599607116473) loglikelihood = -25Value (labelProb=2056.3353593831416 prior=510.81251824787694) loglikelihood = -2Value (labelProb=2055.7480659181833 prior=510.94557203923534) loglikelihood = -2Value (labelProb=2054.575791274241 prior=511.38697395094044) loglikelihood = -25Value (labelProb=2053.242923308981 prior=512.041262685393) loglikelihood = -2565Value (labelProb=2052.1824586307043 prior=514.81358351066) loglikelihood = -2566Value (labelProb=2051.853311456302 prior=512.909504643264) loglikelihood = -2564Value (labelProb=2049.824017556981 prior=513.9785718231219) loglikelihood = -256Value (labelProb=2047.6189533811817 prior=515.2868353869175) loglikelihood = -25Value (labelProb=2046.3512429312702 prior=516.0468558010267) loglikelihood = -25Value (labelProb=2043.9696489594298 prior=517.6731222050852) loglikelihood = -25Value (labelProb=2042.5809573484785 prior=518.7944616961663) loglikelihood = -25Value (labelProb=2041.2588906957 prior=520.4529589682031) loglikelihood = -2561.Value (labelProb=2041.7331656359381 prior=519.4277442860637) loglikelihood = -2561.160909922002
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2561.375419044645 newValue: -2561.160909922002
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9172950620287035
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8326039387308534 most-frequent-tag baseline=0.7614879649890591
+        label   0   1   2  |total
+  0  friendly  73   . 145  |218
+  1             .   .   .  |0
+  2 celebrity   8   . 688  |696
+
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.9012345679012346
+No examples with predicted label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8259303721488596
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.3348623853211009
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9885057471264368
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4882943143812709
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8999345977763243
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8326039387308534
+Trial 0 Training NaiveBayesTrainer with 8222 instances
+Trial 0 Training NaiveBayesTrainer finished
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer training data accuracy = 0.8923619557285332
+Trial 0 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.824945295404814 most-frequent-tag baseline=0.7614879649890591
+        label   0   1   2  |total
+  0  friendly 105   . 113  |218
+  1             .   .   .  |0
+  2 celebrity  47   . 649  |696
+
+Trial 0 Trainer NaiveBayesTrainer test data precision(friendly) = 0.6907894736842105
+No examples with predicted label !
+Trial 0 Trainer NaiveBayesTrainer test data precision() = 1.0
+Trial 0 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8517060367454068
+Trial 0 Trainer NaiveBayesTrainer test data recall(friendly) = 0.481651376146789
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 0 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9324712643678161
+Trial 0 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5675675675675675
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data F1() = 1.0
+Trial 0 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8902606310013718
+Trial 0 Trainer NaiveBayesTrainer test data accuracy = 0.824945295404814
+
+MaxEntTrainer,gaussianPriorVariance=1.0
+Summary. train accuracy mean = 0.9172950620287035 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.8326039387308534 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.9012345679012346 stddev = 0.0 stderr = 0.0
+Summary. test precision() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8259303721488596 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.3348623853211009 stddev = 0.0 stderr = 0.0
+Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9885057471264368 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.4882943143812709 stddev = 0.0 stderr = 0.0
+Summary. test f1() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.8999345977763243 stddev = 0.0 stderr = 0.0
+
+NaiveBayesTrainer
+Summary. train accuracy mean = 0.8923619557285332 stddev = 0.0 stderr = 0.0
+Summary. test accuracy mean = 0.824945295404814 stddev = 0.0 stderr = 0.0
+Summary. test precision(friendly) mean = 0.6907894736842105 stddev = 0.0 stderr = 0.0
+Summary. test precision() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8517060367454068 stddev = 0.0 stderr = 0.0
+Summary. test recall(friendly) mean = 0.481651376146789 stddev = 0.0 stderr = 0.0
+Summary. test recall() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test recall(celebrity) mean = 0.9324712643678161 stddev = 0.0 stderr = 0.0
+Summary. test f1(friendly) mean = 0.5675675675675675 stddev = 0.0 stderr = 0.0
+Summary. test f1() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test f1(celebrity) mean = 0.8902606310013718 stddev = 0.0 stderr = 0.0
+Both --cross-validation and --training-portion were invoked.  Using cross validation with 10 folds.
+Cross-validation folds = 10
+
+-------------------- Trial 0  --------------------
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5733.33290424872 prior=0.500000000000124) loglikelihood = -5733Value (labelProb=4959.578028932301 prior=1.3048211886829524) loglikelihood = -49Value (labelProb=4609.806260213997 prior=2.210774488255759) loglikelihood = -461Value (labelProb=4339.408459170294 prior=3.91707953031295) loglikelihood = -4343Value (labelProb=4104.845754590238 prior=8.194076105917082) loglikelihood = -411Value (labelProb=3885.6874693560835 prior=15.95134050300016) loglikelihood = -39Value (labelProb=3653.745208468571 prior=36.825488988051575) loglikelihood = -36Value (labelProb=3355.564305202705 prior=90.03960125635639) loglikelihood = -344Value (labelProb=3107.8333442265466 prior=187.91802749428925) loglikelihood = -3Value (labelProb=2991.36458837252 prior=252.29859145317687) loglikelihood = -324Value (labelProb=2923.443836112063 prior=283.4557473406272) loglikelihood = -320Value (labelProb=2820.4700225952033 prior=329.1551880313529) loglikelihood = -31Value (labelProb=2764.802347375619 prior=348.0285454647336) loglikelihood = -311Value (labelProb=2677.0498622407313 prior=374.2642711982403) loglikelihood = -30Value (labelProb=3139.920454250392 prior=280.5492647784519) loglikelihood = -342Value (labelProb=2673.406275918479 prior=353.42369058363096) loglikelihood = -30Value (labelProb=2603.713192210329 prior=355.67317814755586) loglikelihood = -29Value (labelProb=2605.1090455191447 prior=318.3577941440881) loglikelihood = -29Value (labelProb=2609.6027440967036 prior=303.56305352832635) loglikelihood = -2Value (labelProb=2590.772823302565 prior=289.0402967912246) loglikelihood = -287Value (labelProb=2548.7618420160657 prior=282.5687678471348) loglikelihood = -28Value (labelProb=2527.029512230356 prior=282.6746742033391) loglikelihood = -280Value (labelProb=2444.5260337246546 prior=311.48964571602806) loglikelihood = -2Value (labelProb=2405.2232837531283 prior=332.21121837633854) loglikelihood = -2Value (labelProb=2331.0242661823313 prior=368.8494939921986) loglikelihood = -26Value (labelProb=2301.2889897493924 prior=448.45778732383167) loglikelihood = -2Value (labelProb=2290.3584526103837 prior=393.80771136705266) loglikelihood = -2Value (labelProb=2253.337554664473 prior=411.71093677123605) loglikelihood = -26Value (labelProb=2223.2875149513216 prior=431.7070647143577) loglikelihood = -26Value (labelProb=2205.5699203344484 prior=437.486276745518) loglikelihood = -264Value (labelProb=2178.1508195742686 prior=441.68247181860147) loglikelihood = -2Value (labelProb=2147.450756035454 prior=479.33641703823287) loglikelihood = -26Value (labelProb=2149.2457067732744 prior=456.86805552278156) loglikelihood = -2Value (labelProb=2149.7354634661106 prior=451.6964403247683) loglikelihood = -26Value (labelProb=2135.438770138609 prior=455.568876540569) loglikelihood = -2591Value (labelProb=2131.9517971202195 prior=457.01377567674655) loglikelihood = -2Value (labelProb=2122.0262246004017 prior=461.9510336956038) loglikelihood = -25Value (labelProb=2115.422153615929 prior=464.91863058041105) loglikelihood = -25Value (labelProb=2137.6789820294093 prior=483.62903482198396) loglikelihood = -2Value (labelProb=2110.790573726249 prior=467.85499631116755) loglikelihood = -25Value (labelProb=2104.3628704035004 prior=471.2653913092035) loglikelihood = -25Value (labelProb=2099.403997837233 prior=473.8340860546127) loglikelihood = -257Value (labelProb=2089.354922748268 prior=480.775225934862) loglikelihood = -2570Value (labelProb=2080.849574026806 prior=487.3810268085409) loglikelihood = -256Value (labelProb=2082.472564130164 prior=484.5267644705183) loglikelihood = -256Value (labelProb=2082.538951842428 prior=483.7483022168436) loglikelihood = -256Value (labelProb=2081.586092498363 prior=489.5766256813197) loglikelihood = -257Value (labelProb=2080.476942829494 prior=485.1746625641538) loglikelihood = -256Value (labelProb=2078.1057798716047 prior=486.53679677856513) loglikelihood = -2Value (labelProb=2073.8985556063067 prior=489.88880422489) loglikelihood = -2563Value (labelProb=2069.069200042544 prior=493.9564116725218) loglikelihood = -256Value (labelProb=2061.7419052000973 prior=500.09176329205843) loglikelihood = -2Value (labelProb=2056.4066268902193 prior=508.2850344324813) loglikelihood = -25Value (labelProb=2058.685264373426 prior=502.50760686810446) loglikelihood = -25Value (labelProb=2050.155726766726 prior=509.6852111457684) loglikelihood = -255Value (labelProb=2049.2306523933034 prior=510.1723526134729) loglikelihood = -25Value (labelProb=2048.747795129996 prior=510.2087406165701) loglikelihood = -255Value (labelProb=2047.2011375475183 prior=511.3044687487627) loglikelihood = -25Value (labelProb=2046.9871053878194 prior=510.8094085181286) loglikelihood = -25Value (labelProb=2047.802217247268 prior=511.56905747128496) loglikelihood = -25Value (labelProb=2046.5704675765971 prior=510.9983059698224) loglikelihood = -2557.5687735464194
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2557.796513905948 newValue: -2557.5687735464194
+Value (labelProb=2502.18021159539 prior=512.4646593185089) loglikelihood = -3014Value (labelProb=2049.6322028606583 prior=511.0999413046455) loglikelihood = -25Value (labelProb=2046.4992049295502 prior=511.00801950329003) loglikelihood = -2Value (labelProb=2046.4059326301306 prior=511.02871727853943) loglikelihood = -2557.43464990867  
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2557.5072244328403 newValue: -2557.43464990867
+
+Trial 0 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9164436876672343
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8140043763676149 most-frequent-tag baseline=0.7592997811816192
+        label   0   1   2  |total
+  0  friendly  58   . 162  |220
+  1             .   .   .  |0
+  2 celebrity   8   . 686  |694
+
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.8787878787878788
+No examples with predicted label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8089622641509434
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.2636363636363636
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9884726224783862
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.40559440559440557
+No examples with predicted label !
+No examples with true label !
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8897535667963685
+Trial 0 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8140043763676149
+Trial 0 Training NaiveBayesTrainer with 8222 instances
+Trial 0 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer training data accuracy = 0.8933349549987838
+Trial 0 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.812910284463895 most-frequent-tag baseline=0.7592997811816192
+        label   0   1   2  |total
+  0  friendly 109   1 110  |220
+  1             .   .   .  |0
+  2 celebrity  60   . 634  |694
+
+Trial 0 Trainer NaiveBayesTrainer test data precision(friendly) = 0.6449704142011834
+Trial 0 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 0 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8521505376344086
+Trial 0 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4954545454545455
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 0 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9135446685878963
+Trial 0 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5604113110539846
+No examples with true label !
+Trial 0 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 0 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.881780250347705
+Trial 0 Trainer NaiveBayesTrainer test data accuracy = 0.812910284463895
+
+-------------------- Trial 1  --------------------
+
+Trial 1 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8223 instances
+Value (labelProb=5732.651876866414 prior=0.4999999999999901) loglikelihood = -57Value (labelProb=4957.163211077041 prior=1.3055333126937707) loglikelihood = -49Value (labelProb=4605.208961781524 prior=2.2156309711122306) loglikelihood = -46Value (labelProb=4330.395526877987 prior=3.943552541547629) loglikelihood = -433Value (labelProb=4090.0753457759643 prior=8.329279641414793) loglikelihood = -40Value (labelProb=3869.784838145413 prior=16.237612968745967) loglikelihood = -38Value (labelProb=3652.132470454805 prior=36.100034945953475) loglikelihood = -36Value (labelProb=3349.4838669929027 prior=87.0326655993077) loglikelihood = -343Value (labelProb=3081.382355044297 prior=187.61549465499346) loglikelihood = -32Value (labelProb=2957.1439603954236 prior=256.23252049598136) loglikelihood = -3Value (labelProb=2879.779075793927 prior=292.5977097391225) loglikelihood = -317Value (labelProb=2796.652905142581 prior=331.3582112294203) loglikelihood = -312Value (labelProb=2749.7502853331885 prior=346.9345109334105) loglikelihood = -30Value (labelProb=2676.3251299739277 prior=365.47556812078204) loglikelihood = -3Value (labelProb=3228.865560129805 prior=265.91993360943803) loglikelihood = -34Value (labelProb=2674.280827004786 prior=346.8685590057834) loglikelihood = -302Value (labelProb=2610.840892205116 prior=346.5930702763742) loglikelihood = -295Value (labelProb=2612.4673737784815 prior=297.34133600878226) loglikelihood = -2Value (labelProb=2610.960857434495 prior=290.5660521472781) loglikelihood = -290Value (labelProb=2543.662285332068 prior=281.8170113368095) loglikelihood = -282Value (labelProb=3276.579477699671 prior=293.5725058216042) loglikelihood = -357Value (labelProb=2529.39522810343 prior=281.84408512993883) loglikelihood = -281Value (labelProb=2446.2954848868108 prior=313.77103251168853) loglikelihood = -2Value (labelProb=2369.395929899438 prior=357.1380679974377) loglikelihood = -272Value (labelProb=2279.5335851976934 prior=405.15582014105115) loglikelihood = -2Value (labelProb=2178.413190070924 prior=468.70414205997207) loglikelihood = -26Value (labelProb=2148.0217755178555 prior=542.5279708612222) loglikelihood = -26Value (labelProb=2147.2217800179715 prior=489.8333537700586) loglikelihood = -26Value (labelProb=2152.3563240555864 prior=479.9586280314526) loglikelihood = -26Value (labelProb=2124.598995751476 prior=487.64812289196755) loglikelihood = -26Value (labelProb=2096.2054185351003 prior=496.53600482617264) loglikelihood = -2Value (labelProb=2031.7533072885285 prior=547.5427437181572) loglikelihood = -25Value (labelProb=2110.988811978093 prior=575.8470087291863) loglikelihood = -268Value (labelProb=2028.1946773741136 prior=550.305278467843) loglikelihood = -257Value (labelProb=2036.9956721633964 prior=538.0872759135767) loglikelihood = -25Value (labelProb=2027.8349919358461 prior=543.4326081829701) loglikelihood = -25Value (labelProb=2013.1297606674282 prior=552.0316915603543) loglikelihood = -25Value (labelProb=2002.8284159115728 prior=557.6759010410461) loglikelihood = -25Value (labelProb=2017.03778770385 prior=549.0209007903273) loglikelihood = -2566Value (labelProb=2003.7049934049153 prior=554.2129259486279) loglikelihood = -25Value (labelProb=2002.284417619361 prior=551.8542065338628) loglikelihood = -255Value (labelProb=2005.7857068797084 prior=547.5903751893018) loglikelihood = -25Value (labelProb=2030.9919667857405 prior=523.7672302474386) loglikelihood = -25Value (labelProb=2014.4351534552084 prior=537.6323389665204) loglikelihood = -25Value (labelProb=2019.6157372348287 prior=531.1531538221195) loglikelihood = -25Value (labelProb=2025.1812004207854 prior=524.3428448966679) loglikelihood = -25Value (labelProb=2028.895370765885 prior=519.6632110083995) loglikelihood = -254Value (labelProb=2029.6056528201261 prior=518.128705511992) loglikelihood = -254Value (labelProb=2029.5129005642439 prior=517.547534083937) loglikelihood = -254Value (labelProb=2028.2090800159815 prior=518.3837032092331) loglikelihood = -25Value (labelProb=2027.094099895569 prior=518.6447171581881) loglikelihood = -254Value (labelProb=2026.0447406882688 prior=518.119895972219) loglikelihood = -254Value (labelProb=2025.7831736093551 prior=518.68212280335) loglikelihood = -2544Value (labelProb=2025.4101319857375 prior=518.3459655025526) loglikelihood = -25Value (labelProb=2024.496911032331 prior=518.8136324684904) loglikelihood = -254Value (labelProb=2024.3871424021634 prior=518.8822541684915) loglikelihood = -2543.269396570655
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2543.310543500821 newValue: -2543.269396570655
+Value (labelProb=2179.623181623252 prior=519.5471720890215) loglikelihood = -269Value (labelProb=2025.234248627148 prior=518.9037459605801) loglikelihood = -254Value (labelProb=2024.3362950792753 prior=518.8839533477085) loglikelihood = -25Value (labelProb=2024.205880887469 prior=518.8971595421604) loglikelihood = -2543.1030404296293 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2543.2202484269837 newValue: -2543.1030404296293
+
+Trial 1 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9170618995500426
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8039430449069004 most-frequent-tag baseline=0.76013143483023
+        label   0   1   2  |total
+  0  friendly  60   . 159  |219
+  1             .   .   .  |0
+  2 celebrity  20   . 674  |694
+
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.75
+No examples with predicted label !
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8091236494597839
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.273972602739726
+No examples with true label !
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9711815561959655
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4013377926421405
+No examples with predicted label !
+No examples with true label !
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8827766863130322
+Trial 1 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8039430449069004
+Trial 1 Training NaiveBayesTrainer with 8223 instances
+Trial 1 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 1 Trainer NaiveBayesTrainer training data accuracy = 0.8926182658397178
+Trial 1 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.7940854326396495 most-frequent-tag baseline=0.76013143483023
+        label   0   1   2  |total
+  0  friendly 103   . 116  |219
+  1             .   .   .  |0
+  2 celebrity  71   1 622  |694
+
+Trial 1 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5919540229885057
+Trial 1 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 1 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8428184281842819
+Trial 1 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4703196347031963
+No examples with true label !
+Trial 1 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 1 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.8962536023054755
+Trial 1 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5241730279898219
+No examples with true label !
+Trial 1 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 1 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8687150837988827
+Trial 1 Trainer NaiveBayesTrainer test data accuracy = 0.7940854326396495
+
+-------------------- Trial 2  --------------------
+
+Trial 2 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5740.916122363261 prior=0.4999999999999527) loglikelihood = -57Value (labelProb=4968.558156994515 prior=1.3050845962695021) loglikelihood = -49Value (labelProb=4619.255023300014 prior=2.2114473826140193) loglikelihood = -46Value (labelProb=4349.744175259403 prior=3.9159091247697777) loglikelihood = -43Value (labelProb=4116.804495026185 prior=8.20354401037091) loglikelihood = -4125Value (labelProb=3900.0622288761374 prior=15.89429184458016) loglikelihood = -39Value (labelProb=3677.1760253165344 prior=35.98127984066175) loglikelihood = -37Value (labelProb=3386.4076148934305 prior=86.82536020936168) loglikelihood = -34Value (labelProb=3128.87059864653 prior=190.82580101012653) loglikelihood = -331Value (labelProb=2981.5224786708714 prior=253.295091083546) loglikelihood = -323Value (labelProb=2899.9706642104597 prior=299.0794081974526) loglikelihood = -31Value (labelProb=2788.617651178168 prior=364.0887185525841) loglikelihood = -315Value (labelProb=2770.5858470370963 prior=355.3879911892074) loglikelihood = -31Value (labelProb=2756.9002770178877 prior=298.3607510464215) loglikelihood = -30Value (labelProb=2723.1520575615023 prior=291.8870931930513) loglikelihood = -30Value (labelProb=2524.5198906293754 prior=603.0532103523209) loglikelihood = -31Value (labelProb=2580.5253564304744 prior=387.2207134017466) loglikelihood = -29Value (labelProb=2454.9589483384098 prior=455.40736298170197) loglikelihood = -2Value (labelProb=2451.743405527803 prior=452.1001409776942) loglikelihood = -290Value (labelProb=2456.6957047579253 prior=430.24667312611797) loglikelihood = -2Value (labelProb=2435.289312629546 prior=423.42269447747105) loglikelihood = -28Value (labelProb=2291.6068931956415 prior=520.7344955710605) loglikelihood = -28Value (labelProb=2235.2246461235113 prior=571.247333213545) loglikelihood = -280Value (labelProb=2223.1133340405504 prior=553.4483970089667) loglikelihood = -27Value (labelProb=2216.9120847614454 prior=553.5892256737772) loglikelihood = -27Value (labelProb=2198.2638471764317 prior=562.9492777233085) loglikelihood = -27Value (labelProb=2165.069440068834 prior=581.9971947882777) loglikelihood = -274Value (labelProb=2086.3909806705983 prior=635.0474602341453) loglikelihood = -27Value (labelProb=2081.3652486287215 prior=650.5030805837948) loglikelihood = -27Value (labelProb=2066.3591594299787 prior=641.4522476157238) loglikelihood = -27Value (labelProb=2063.4308090208924 prior=641.2221373735645) loglikelihood = -27Value (labelProb=2059.631226251001 prior=624.9738474250446) loglikelihood = -268Value (labelProb=2068.866265005838 prior=605.0097559519764) loglikelihood = -267Value (labelProb=2093.174582656597 prior=567.4167809115991) loglikelihood = -266Value (labelProb=2116.927909634691 prior=534.6229588804518) loglikelihood = -265Value (labelProb=2145.922148084799 prior=493.31061895299985) loglikelihood = -26Value (labelProb=2129.0617788321733 prior=499.6854585065252) loglikelihood = -26Value (labelProb=2115.8957568403825 prior=508.8363916563969) loglikelihood = -26Value (labelProb=2110.0329696500967 prior=512.0178003218981) loglikelihood = -26Value (labelProb=2175.980978867214 prior=455.9111490123089) loglikelihood = -263Value (labelProb=2126.360777306241 prior=490.5971604901789) loglikelihood = -261Value (labelProb=2126.808022491886 prior=484.51371850781567) loglikelihood = -26Value (labelProb=2131.2923719523237 prior=477.36795495718616) loglikelihood = -2Value (labelProb=2138.574402363286 prior=466.2414324425689) loglikelihood = -260Value (labelProb=2255.753429979928 prior=401.44600158426016) loglikelihood = -26Value (labelProb=2147.251105657584 prior=455.92318497274397) loglikelihood = -26Value (labelProb=2155.0544693933184 prior=445.07191247167765) loglikelihood = -2Value (labelProb=2158.065892894998 prior=439.7182037252911) loglikelihood = -259Value (labelProb=2157.417357980252 prior=438.5052192512969) loglikelihood = -259Value (labelProb=2153.1994913815133 prior=440.5186097598118) loglikelihood = -25Value (labelProb=2132.70835730641 prior=461.12461517229724) loglikelihood = -259Value (labelProb=2141.154221230444 prior=450.56050639793966) loglikelihood = -25Value (labelProb=2131.2462841323704 prior=457.27171363817325) loglikelihood = -2Value (labelProb=2126.6922262431913 prior=460.8295255610982) loglikelihood = -25Value (labelProb=2121.601267116476 prior=464.5593166805366) loglikelihood = -258Value (labelProb=2115.571115773894 prior=467.9829323477022) loglikelihood = -258Value (labelProb=2099.222015827007 prior=483.36701591165996) loglikelihood = -25Value (labelProb=2103.632967324985 prior=476.357424382764) loglikelihood = -2579Value (labelProb=2106.7625451548497 prior=472.6397038375821) loglikelihood = -25Value (labelProb=2107.954800456803 prior=469.98208067392653) loglikelihood = -25Value (labelProb=2106.405535187314 prior=469.6677189225541) loglikelihood = -257Value (labelProb=2102.4208078148163 prior=472.6039585563291) loglikelihood = -25Value (labelProb=2091.845296166502 prior=486.82121752880823) loglikelihood = -25Value (labelProb=2099.7416702191254 prior=475.1032913914381) loglikelihood = -2574.8449616105636
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2575.0247663711452 newValue: -2574.8449616105636
+Value (labelProb=2744.285888305536 prior=481.1541482880267) loglikelihood = -322Value (labelProb=2104.8288739921095 prior=475.663377081091) loglikelihood = -258Value (labelProb=2100.3206587658674 prior=475.3820842362777) loglikelihood = -25Value (labelProb=2099.533205839234 prior=475.242375313864) loglikelihood = -2574Value (labelProb=2099.373057258086 prior=475.25190542142536) loglikelihood = -2574.6249626795116
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2574.7755811530983 newValue: -2574.6249626795116
+
+Trial 2 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9144976891267331
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8282275711159738 most-frequent-tag baseline=0.762582056892779
+        label   0   1   2  |total
+  0  friendly  68   . 149  |217
+  1             .   .   .  |0
+  2 celebrity   8   . 689  |697
+
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.8947368421052632
+No examples with predicted label !
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8221957040572793
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.31336405529953915
+No examples with true label !
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9885222381635581
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4641638225255972
+No examples with predicted label !
+No examples with true label !
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8977198697068405
+Trial 2 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8282275711159738
+Trial 2 Training NaiveBayesTrainer with 8222 instances
+Trial 2 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 2 Trainer NaiveBayesTrainer training data accuracy = 0.8934565799075651
+Trial 2 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8183807439824945 most-frequent-tag baseline=0.762582056892779
+        label   0   1   2  |total
+  0  friendly 108   . 109  |217
+  1             .   .   .  |0
+  2 celebrity  54   3 640  |697
+
+Trial 2 Trainer NaiveBayesTrainer test data precision(friendly) = 0.6666666666666666
+Trial 2 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 2 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8544726301735648
+Trial 2 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4976958525345622
+No examples with true label !
+Trial 2 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 2 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9182209469153515
+Trial 2 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5699208443271768
+No examples with true label !
+Trial 2 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 2 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8852005532503459
+Trial 2 Trainer NaiveBayesTrainer test data accuracy = 0.8183807439824945
+
+-------------------- Trial 3  --------------------
+
+Trial 3 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8223 instances
+Value (labelProb=5755.807160772086 prior=0.5000000000000269) loglikelihood = -57Value (labelProb=4987.70448810409 prior=1.302577364613374) loglikelihood = -4989Value (labelProb=4634.663564069352 prior=2.2207187778966517) loglikelihood = -46Value (labelProb=4362.998110642505 prior=3.9484421919637676) loglikelihood = -43Value (labelProb=4126.093953505449 prior=8.414180248177225) loglikelihood = -413Value (labelProb=3899.514037990238 prior=16.46139465418854) loglikelihood = -391Value (labelProb=3688.947817676242 prior=35.9848236371719) loglikelihood = -3724Value (labelProb=3427.2137837162404 prior=81.08751591164442) loglikelihood = -35Value (labelProb=3153.3986988293614 prior=178.12697533701342) loglikelihood = -3Value (labelProb=2938.402802403803 prior=270.0889651414113) loglikelihood = -320Value (labelProb=2851.6174096743425 prior=312.9503888870262) loglikelihood = -31Value (labelProb=2712.0179481812434 prior=390.0940304711706) loglikelihood = -31Value (labelProb=2670.5656096297275 prior=388.12516444967406) loglikelihood = -3Value (labelProb=2646.037554875737 prior=358.82947249189334) loglikelihood = -30Value (labelProb=2649.922471018851 prior=320.4879436577792) loglikelihood = -297Value (labelProb=2608.3804266912894 prior=297.26969623276767) loglikelihood = -2Value (labelProb=2576.218682962598 prior=320.44875084550955) loglikelihood = -28Value (labelProb=2478.11177964464 prior=335.2497986183284) loglikelihood = -2813Value (labelProb=2425.4400678987367 prior=363.86872656401124) loglikelihood = -2Value (labelProb=2339.706438277115 prior=419.25748651123513) loglikelihood = -27Value (labelProb=2229.2890967811677 prior=489.2283197061853) loglikelihood = -27Value (labelProb=2207.252439209125 prior=521.2783152833874) loglikelihood = -272Value (labelProb=2196.157122195457 prior=502.2300179445379) loglikelihood = -269Value (labelProb=2161.0916824417645 prior=532.1159067763808) loglikelihood = -26Value (labelProb=2162.3508151934443 prior=526.0937372871317) loglikelihood = -26Value (labelProb=2164.0191061519017 prior=522.0535618908257) loglikelihood = -26Value (labelProb=2163.5881195422157 prior=517.1241245345699) loglikelihood = -26Value (labelProb=2159.70832090971 prior=515.2677850924995) loglikelihood = -2674Value (labelProb=2142.0901358656124 prior=520.3888736311111) loglikelihood = -26Value (labelProb=2153.164141341268 prior=509.1918893487334) loglikelihood = -2662.3560306900017 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2662.4790094967234 newValue: -2662.3560306900017
+Value (labelProb=2984.63841205276 prior=508.2646653527402) loglikelihood = -3492Value (labelProb=2142.271028361147 prior=509.05416694910144) loglikelihood = -26Value (labelProb=2140.984630570525 prior=508.96921968634246) loglikelihood = -26Value (labelProb=2135.7725333298176 prior=508.46038150806316) loglikelihood = -2Value (labelProb=2132.066171518838 prior=507.88252545999313) loglikelihood = -26Value (labelProb=2128.382184025113 prior=506.4901881243486) loglikelihood = -263Value (labelProb=2125.6242639542934 prior=504.22220212965266) loglikelihood = -2Value (labelProb=2123.7694039574635 prior=501.612518205694) loglikelihood = -262Value (labelProb=2564.9652567381577 prior=492.46379453500447) loglikelihood = -3Value (labelProb=2125.7572463154024 prior=500.29293362232823) loglikelihood = -2Value (labelProb=2123.4161657884806 prior=500.94148390798625) loglikelihood = -2Value (labelProb=2120.9801225324845 prior=498.23468439378047) loglikelihood = -2Value (labelProb=2117.317553902615 prior=495.7803670860194) loglikelihood = -261Value (labelProb=2114.270782431825 prior=493.9125951617881) loglikelihood = -260Value (labelProb=2110.2242431751156 prior=492.08156001383753) loglikelihood = -2Value (labelProb=2104.5347531570674 prior=488.669353728476) loglikelihood = -259Value (labelProb=2118.541967703035 prior=488.94067401908944) loglikelihood = -26Value (labelProb=2099.291445414319 prior=488.5530075355638) loglikelihood = -258Value (labelProb=2093.6104355212146 prior=488.9846385408629) loglikelihood = -25Value (labelProb=2089.092494996214 prior=489.5309984746202) loglikelihood = -257Value (labelProb=2087.77795735029 prior=489.9892147702738) loglikelihood = -2577Value (labelProb=2084.649666828276 prior=491.7419348781985) loglikelihood = -257Value (labelProb=2082.9631969754423 prior=492.91961144946174) loglikelihood = -2Value (labelProb=2081.636483217388 prior=494.1904992797353) loglikelihood = -2575.8269824971235 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2575.882808424904 newValue: -2575.8269824971235
+
+Trial 3 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9165754590781953
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8433734939759037 most-frequent-tag baseline=0.7842278203723987
+        label   0   1   2  |total
+  0  friendly  68   . 129  |197
+  1             .   .   .  |0
+  2 celebrity  14   . 702  |716
+
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.8292682926829268
+No examples with predicted label !
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8447653429602888
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.34517766497461927
+No examples with true label !
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9804469273743017
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4874551971326164
+No examples with predicted label !
+No examples with true label !
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.9075630252100841
+Trial 3 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8433734939759037
+Trial 3 Training NaiveBayesTrainer with 8223 instances
+Trial 3 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 3 Trainer NaiveBayesTrainer training data accuracy = 0.8923750456037942
+Trial 3 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8225629791894852 most-frequent-tag baseline=0.7842278203723987
+        label   0   1   2  |total
+  0  friendly  94   1 102  |197
+  1             .   .   .  |0
+  2 celebrity  59   . 657  |716
+
+Trial 3 Trainer NaiveBayesTrainer test data precision(friendly) = 0.6143790849673203
+Trial 3 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 3 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8656126482213439
+Trial 3 Trainer NaiveBayesTrainer test data recall(friendly) = 0.47715736040609136
+No examples with true label !
+Trial 3 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 3 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9175977653631285
+Trial 3 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5371428571428573
+No examples with true label !
+Trial 3 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 3 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8908474576271187
+Trial 3 Trainer NaiveBayesTrainer test data accuracy = 0.8225629791894852
+
+-------------------- Trial 4  --------------------
+
+Trial 4 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5751.960874076635 prior=0.5000000000000812) loglikelihood = -57Value (labelProb=4984.393391517643 prior=1.2997275689707024) loglikelihood = -49Value (labelProb=4630.117068146555 prior=2.217670128698516) loglikelihood = -463Value (labelProb=4356.505031596421 prior=3.9492129061411143) loglikelihood = -43Value (labelProb=4117.844801799405 prior=8.429901685178308) loglikelihood = -412Value (labelProb=3889.837172829921 prior=16.489697862437627) loglikelihood = -39Value (labelProb=3673.676349025696 prior=36.42665066714109) loglikelihood = -371Value (labelProb=3411.2019738017198 prior=82.24075025851134) loglikelihood = -34Value (labelProb=3155.5909154486394 prior=182.44879943601057) loglikelihood = -3Value (labelProb=2976.3128380347594 prior=256.7145642537083) loglikelihood = -32Value (labelProb=3061.31467003391 prior=361.4918575986541) loglikelihood = -3422Value (labelProb=2926.0623359671017 prior=282.53961446384704) loglikelihood = -3Value (labelProb=2877.344552017773 prior=303.0165023967327) loglikelihood = -318Value (labelProb=2788.255404793612 prior=336.62404615094533) loglikelihood = -31Value (labelProb=2736.578679669758 prior=351.0222545990797) loglikelihood = -308Value (labelProb=2589.2079561257647 prior=392.2062798734392) loglikelihood = -29Value (labelProb=2618.8131842758125 prior=585.7315791532931) loglikelihood = -32Value (labelProb=2519.3030941368447 prior=436.21298114090234) loglikelihood = -2Value (labelProb=2455.1709754406147 prior=459.31339855940655) loglikelihood = -2Value (labelProb=2428.6579060577396 prior=466.63167016684525) loglikelihood = -2Value (labelProb=2373.5625857656128 prior=492.75279378037834) loglikelihood = -2Value (labelProb=2290.507042931201 prior=529.5204839446703) loglikelihood = -282Value (labelProb=2419.1219252307974 prior=561.4488152322631) loglikelihood = -29Value (labelProb=2270.0947928988944 prior=535.3539697825115) loglikelihood = -28Value (labelProb=2213.2194413099965 prior=556.8562399634119) loglikelihood = -27Value (labelProb=2196.938841586956 prior=557.1994216305762) loglikelihood = -275Value (labelProb=2190.4373010268064 prior=552.2690677246145) loglikelihood = -27Value (labelProb=2180.035200051577 prior=545.7262793331263) loglikelihood = -272Value (labelProb=2162.989341899906 prior=533.9254151367625) loglikelihood = -269Value (labelProb=2161.7658332995084 prior=529.2385535493269) loglikelihood = -26Value (labelProb=2131.5921253600563 prior=529.5456718579863) loglikelihood = -26Value (labelProb=2124.08211558347 prior=529.9994708288528) loglikelihood = -2654Value (labelProb=2093.8379503318774 prior=533.2446893448282) loglikelihood = -26Value (labelProb=2085.5198117750288 prior=535.5073524913805) loglikelihood = -26Value (labelProb=2076.663670493503 prior=536.1871314770992) loglikelihood = -261Value (labelProb=2069.7881896602444 prior=537.2443893012256) loglikelihood = -26Value (labelProb=2058.767934540186 prior=540.3964171031345) loglikelihood = -259Value (labelProb=2047.9933448102258 prior=545.1050963915299) loglikelihood = -25Value (labelProb=2042.8922515229242 prior=545.1517916245749) loglikelihood = -25Value (labelProb=2041.2084870769504 prior=544.4633024076956) loglikelihood = -25Value (labelProb=2035.9225962315306 prior=544.9224220224826) loglikelihood = -25Value (labelProb=2031.3857367229891 prior=545.8866553141016) loglikelihood = -25Value (labelProb=2026.426911694535 prior=547.2223001922114) loglikelihood = -257Value (labelProb=2030.4182960794421 prior=546.7850790533873) loglikelihood = -25Value (labelProb=2025.5662192705852 prior=547.034398286339) loglikelihood = -257Value (labelProb=2024.7589035535032 prior=546.7265876328121) loglikelihood = -25Value (labelProb=2024.1219932347321 prior=545.5996145935717) loglikelihood = -25Value (labelProb=2023.6647599532346 prior=544.9510328399035) loglikelihood = -25Value (labelProb=2025.2945404067555 prior=543.9486786108305) loglikelihood = -25Value (labelProb=2023.5846260025264 prior=544.4633908335474) loglikelihood = -25Value (labelProb=2023.574782015709 prior=544.2058687890764) loglikelihood = -256Value (labelProb=2023.1361931475749 prior=544.3535635937194) loglikelihood = -25Value (labelProb=2022.9121400432475 prior=544.4203737336268) loglikelihood = -2567.3325137768743
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2567.4897567412945 newValue: -2567.3325137768743
+Value (labelProb=2090.9815059301914 prior=543.0791716595703) loglikelihood = -26Value (labelProb=2022.898615076686 prior=544.2412535261692) loglikelihood = -256Value (labelProb=2022.5153985125864 prior=544.2082818332223) loglikelihood = -25Value (labelProb=2022.4693482775438 prior=544.1627777559465) loglikelihood = -2566.6321260334903
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2566.7236803458086 newValue: -2566.6321260334903
+
+Trial 4 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9174166869374848
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8271334792122538 most-frequent-tag baseline=0.7800875273522976
+        label   0   1   2  |total
+  0  friendly  60   . 141  |201
+  1             .   .   .  |0
+  2 celebrity  17   . 696  |713
+
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.7792207792207793
+No examples with predicted label !
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8315412186379928
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.29850746268656714
+No examples with true label !
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9761570827489481
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4316546762589928
+No examples with predicted label !
+No examples with true label !
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8980645161290322
+Trial 4 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8271334792122538
+Trial 4 Training NaiveBayesTrainer with 8222 instances
+Trial 4 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 4 Trainer NaiveBayesTrainer training data accuracy = 0.8919970810021892
+Trial 4 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8074398249452954 most-frequent-tag baseline=0.7800875273522976
+        label   0   1   2  |total
+  0  friendly  93   . 108  |201
+  1             .   .   .  |0
+  2 celebrity  67   1 645  |713
+
+Trial 4 Trainer NaiveBayesTrainer test data precision(friendly) = 0.58125
+Trial 4 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 4 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8565737051792829
+Trial 4 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4626865671641791
+No examples with true label !
+Trial 4 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 4 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9046283309957924
+Trial 4 Trainer NaiveBayesTrainer test data F1(friendly) = 0.515235457063712
+No examples with true label !
+Trial 4 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 4 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8799454297407913
+Trial 4 Trainer NaiveBayesTrainer test data accuracy = 0.8074398249452954
+
+-------------------- Trial 5  --------------------
+
+Trial 5 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5757.236051258098 prior=0.5000000000000967) loglikelihood = -57Value (labelProb=4993.39113065293 prior=1.2977096578728955) loglikelihood = -499Value (labelProb=4642.938458594616 prior=2.209746585848909) loglikelihood = -464Value (labelProb=4377.92307405054 prior=3.8994444086531317) loglikelihood = -438Value (labelProb=4142.803536062836 prior=8.277658162954697) loglikelihood = -415Value (labelProb=3912.7749891620365 prior=16.396211165956768) loglikelihood = -3Value (labelProb=3688.668057166623 prior=37.01127657018086) loglikelihood = -372Value (labelProb=3410.309237015553 prior=86.86189482748259) loglikelihood = -349Value (labelProb=3152.95990951675 prior=189.85415114009436) loglikelihood = -334Value (labelProb=2983.3845518824705 prior=262.6051085828625) loglikelihood = -32Value (labelProb=3092.393148735019 prior=377.13601194406) loglikelihood = -3469.Value (labelProb=2938.011776914746 prior=287.6734080215211) loglikelihood = -322Value (labelProb=2879.880015252192 prior=314.29123818617455) loglikelihood = -31Value (labelProb=2787.2575265071523 prior=353.259112846963) loglikelihood = -314Value (labelProb=2726.095104417526 prior=374.21666606846156) loglikelihood = -31Value (labelProb=2603.4165002765053 prior=406.18289648740245) loglikelihood = -3Value (labelProb=2550.0144835701503 prior=497.8830695471414) loglikelihood = -30Value (labelProb=2519.4864960263585 prior=441.45077158917394) loglikelihood = -2Value (labelProb=2452.3632478196255 prior=457.84938930551954) loglikelihood = -2Value (labelProb=2574.649153464734 prior=480.0128240069836) loglikelihood = -305Value (labelProb=2433.337848707943 prior=462.46906902597635) loglikelihood = -28Value (labelProb=2417.3058698855098 prior=459.9627546866942) loglikelihood = -28Value (labelProb=2400.175112631871 prior=458.3429786195953) loglikelihood = -285Value (labelProb=2363.1306999785043 prior=460.36723340344) loglikelihood = -2823Value (labelProb=2320.6930410042214 prior=464.83470517024836) loglikelihood = -2Value (labelProb=2981.7752275125017 prior=487.37612810514526) loglikelihood = -3Value (labelProb=2309.4122926073483 prior=466.360654684015) loglikelihood = -277Value (labelProb=2281.827384028742 prior=471.76407914805696) loglikelihood = -27Value (labelProb=2261.425944522948 prior=475.27301949033637) loglikelihood = -27Value (labelProb=2248.43510717158 prior=478.6383262086327) loglikelihood = -2727Value (labelProb=2210.79322751265 prior=488.84071350908476) loglikelihood = -269Value (labelProb=2238.1931444506313 prior=498.2389233089079) loglikelihood = -27Value (labelProb=2200.313845126894 prior=491.13319082205726) loglikelihood = -26Value (labelProb=2167.912834349033 prior=501.92024482258336) loglikelihood = -26Value (labelProb=2148.8214842767825 prior=505.99752314347467) loglikelihood = -2Value (labelProb=2130.798031811105 prior=509.08702546662516) loglikelihood = -26Value (labelProb=2115.9229162122147 prior=512.8653125297) loglikelihood = -2628.Value (labelProb=2083.7832365447766 prior=541.0858330076225) loglikelihood = -26Value (labelProb=2069.2544733475897 prior=537.6171754575034) loglikelihood = -26Value (labelProb=2060.432267067368 prior=540.1868874066944) loglikelihood = -260Value (labelProb=2040.9488569310295 prior=557.2476319580999) loglikelihood = -25Value (labelProb=2047.169552948294 prior=548.6403051122815) loglikelihood = -259Value (labelProb=2041.4234846332727 prior=549.9510665636476) loglikelihood = -25Value (labelProb=2040.888984440367 prior=548.0909288721946) loglikelihood = -258Value (labelProb=2034.7752863490741 prior=551.826536269381) loglikelihood = -258Value (labelProb=2034.1599963987865 prior=551.8494508782704) loglikelihood = -25Value (labelProb=2030.3825031881838 prior=553.6689466948753) loglikelihood = -25Value (labelProb=2031.1684748136063 prior=552.2263423800464) loglikelihood = -25Value (labelProb=2033.6544044273753 prior=548.5690678722543) loglikelihood = -25Value (labelProb=2034.9384301896982 prior=544.392351533426) loglikelihood = -257Value (labelProb=2038.0071914285047 prior=547.0147598351363) loglikelihood = -25Value (labelProb=2033.727025117901 prior=544.8708797089988) loglikelihood = -257Value (labelProb=2033.646761997125 prior=543.7430167917554) loglikelihood = -257Value (labelProb=2033.098907104273 prior=544.1513005342141) loglikelihood = -2577.250207638487 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2577.3897787888804 newValue: -2577.250207638487
+Value (labelProb=2059.9101492858877 prior=541.5548853382394) loglikelihood = -26Value (labelProb=2033.0286023050658 prior=543.7882670172219) loglikelihood = -25Value (labelProb=2032.7827625094612 prior=543.4474735839165) loglikelihood = -25Value (labelProb=2032.885477033111 prior=543.1309039705734) loglikelihood = -2576.0163810036847 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2576.2302360933777 newValue: -2576.0163810036847
+
+Trial 5 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9171734371199222
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8446389496717724 most-frequent-tag baseline=0.7855579868708972
+        label   0   1   2  |total
+  0  friendly  73   . 123  |196
+  1             .   .   .  |0
+  2 celebrity  19   . 699  |718
+
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.7934782608695652
+No examples with predicted label !
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8503649635036497
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.37244897959183676
+No examples with true label !
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9735376044568245
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.5069444444444445
+No examples with predicted label !
+No examples with true label !
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.9077922077922078
+Trial 5 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8446389496717724
+Trial 5 Training NaiveBayesTrainer with 8222 instances
+Trial 5 Training NaiveBayesTrainer finished
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 5 Trainer NaiveBayesTrainer training data accuracy = 0.8930917051812212
+Trial 5 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.7986870897155361 most-frequent-tag baseline=0.7855579868708972
+        label   0   1   2  |total
+  0  friendly  92   . 104  |196
+  1             .   .   .  |0
+  2 celebrity  80   . 638  |718
+
+Trial 5 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5348837209302325
+No examples with predicted label !
+Trial 5 Trainer NaiveBayesTrainer test data precision() = 1.0
+Trial 5 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8598382749326146
+Trial 5 Trainer NaiveBayesTrainer test data recall(friendly) = 0.46938775510204084
+No examples with true label !
+Trial 5 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 5 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.8885793871866295
+Trial 5 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5
+No examples with predicted label !
+No examples with true label !
+Trial 5 Trainer NaiveBayesTrainer test data F1() = 1.0
+Trial 5 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.873972602739726
+Trial 5 Trainer NaiveBayesTrainer test data accuracy = 0.7986870897155361
+
+-------------------- Trial 6  --------------------
+
+Trial 6 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8223 instances
+Value (labelProb=5727.745606822784 prior=0.4999999999999177) loglikelihood = -57Value (labelProb=4951.260805809051 prior=1.3076652043806583) loglikelihood = -49Value (labelProb=4602.043792863479 prior=2.2111636665150955) loglikelihood = -46Value (labelProb=4328.735589685667 prior=3.927633421067799) loglikelihood = -433Value (labelProb=4091.656079752023 prior=8.222668258811794) loglikelihood = -409Value (labelProb=3876.4046481636956 prior=15.960941809984106) loglikelihood = -3Value (labelProb=3655.6160112696716 prior=35.805796692085096) loglikelihood = -3Value (labelProb=3333.3350004210984 prior=90.52407106886346) loglikelihood = -34Value (labelProb=3069.115686769509 prior=195.81153598112434) loglikelihood = -32Value (labelProb=2943.076274530711 prior=254.23532865038044) loglikelihood = -31Value (labelProb=2847.7508526888982 prior=315.5834762692026) loglikelihood = -31Value (labelProb=2793.9296179563166 prior=338.2332336841057) loglikelihood = -31Value (labelProb=2747.090223020306 prior=349.0164480999007) loglikelihood = -309Value (labelProb=2712.0102818012942 prior=347.54280202509506) loglikelihood = -3Value (labelProb=2610.236207075872 prior=359.4705057874731) loglikelihood = -296Value (labelProb=2467.3980438874755 prior=529.1131282704048) loglikelihood = -29Value (labelProb=2491.9789238816556 prior=428.4582148443641) loglikelihood = -29Value (labelProb=2428.275636815713 prior=459.112590177815) loglikelihood = -2887Value (labelProb=2411.1516046615175 prior=465.8029939747012) loglikelihood = -28Value (labelProb=2358.6411798076574 prior=485.10588000034124) loglikelihood = -2Value (labelProb=2224.5588411828444 prior=622.7668720907387) loglikelihood = -28Value (labelProb=2280.257793342336 prior=547.636092668035) loglikelihood = -2827Value (labelProb=2252.047954407682 prior=564.3093450580225) loglikelihood = -281Value (labelProb=2184.147806414881 prior=608.8153154581901) loglikelihood = -279Value (labelProb=2145.133600957213 prior=627.8337219824261) loglikelihood = -277Value (labelProb=2131.0361035748792 prior=618.1831335850221) loglikelihood = -27Value (labelProb=2131.0845860083987 prior=582.119217890279) loglikelihood = -271Value (labelProb=2111.6182149537317 prior=563.5330656386811) loglikelihood = -26Value (labelProb=2122.8181479843706 prior=529.0214965327713) loglikelihood = -26Value (labelProb=2140.3187214065874 prior=497.2192382538479) loglikelihood = -26Value (labelProb=2130.4036644494686 prior=489.8930598357058) loglikelihood = -26Value (labelProb=2139.0845213063794 prior=468.2449385979357) loglikelihood = -26Value (labelProb=2151.2076982482545 prior=448.361042573806) loglikelihood = -259Value (labelProb=2170.11143716029 prior=424.6166884775365) loglikelihood = -2594Value (labelProb=3000.2800797663563 prior=413.57741102232166) loglikelihood = -3Value (labelProb=2172.2637698864314 prior=422.65845059172915) loglikelihood = -2Value (labelProb=2168.2217232442663 prior=423.61383869744475) loglikelihood = -2Value (labelProb=2166.009596333166 prior=423.5882626436503) loglikelihood = -258Value (labelProb=2158.2539733723347 prior=419.70840012757185) loglikelihood = -2Value (labelProb=2143.7949641918194 prior=429.014707542232) loglikelihood = -257Value (labelProb=2130.4272735022923 prior=438.8008629775438) loglikelihood = -25Value (labelProb=2115.953842341128 prior=449.17755010173255) loglikelihood = -25Value (labelProb=2096.8824935035136 prior=464.4485326240471) loglikelihood = -25Value (labelProb=2093.462612721677 prior=465.69319335235764) loglikelihood = -25Value (labelProb=2087.6434036026867 prior=468.63216453606634) loglikelihood = -2Value (labelProb=2081.4450441025538 prior=472.7339508447695) loglikelihood = -25Value (labelProb=2093.843238139102 prior=463.5110191620052) loglikelihood = -255Value (labelProb=2083.4972343155814 prior=470.04953359854636) loglikelihood = -2Value (labelProb=2083.294067790649 prior=469.5136838267743) loglikelihood = -255Value (labelProb=2083.221846725317 prior=469.16610650864027) loglikelihood = -25Value (labelProb=2081.1096570203854 prior=470.62154734713687) loglikelihood = -2Value (labelProb=2075.880342699076 prior=474.81372697571476) loglikelihood = -25Value (labelProb=2067.54305779176 prior=481.881876045343) loglikelihood = -2549.Value (labelProb=2058.2001172522805 prior=491.5629502222996) loglikelihood = -25Value (labelProb=2062.4270482207025 prior=486.24171109337857) loglikelihood = -2Value (labelProb=2059.693132353042 prior=488.51000668609356) loglikelihood = -25Value (labelProb=2056.6678066171817 prior=491.00222454473385) loglikelihood = -2Value (labelProb=2044.0850168399827 prior=502.29391565732817) loglikelihood = -2Value (labelProb=2038.5065360167555 prior=507.5798569691324) loglikelihood = -25Value (labelProb=2037.8867561157533 prior=507.59057347936323) loglikelihood = -2Value (labelProb=2037.5853539757534 prior=507.72238077630055) loglikelihood = -2545.307734752054 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2545.4773295951163 newValue: -2545.307734752054
+Value (labelProb=2382.078679730466 prior=510.25339729636846) loglikelihood = -28Value (labelProb=2039.566256007615 prior=507.9304824283125) loglikelihood = -254Value (labelProb=2037.4929098711325 prior=507.74274094150167) loglikelihood = -2Value (labelProb=2037.3273197793983 prior=507.7963093379306) loglikelihood = -2545.123629117329 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2545.235650812634 newValue: -2545.123629117329
+
+Trial 6 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9163322388422717
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8192771084337349 most-frequent-tag baseline=0.7502738225629791
+        label   0   1   2  |total
+  0  friendly  77   . 151  |228
+  1             .   .   .  |0
+  2 celebrity  14   . 671  |685
+
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.8461538461538461
+No examples with predicted label !
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.816301703163017
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.33771929824561403
+No examples with true label !
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9795620437956204
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4827586206896552
+No examples with predicted label !
+No examples with true label !
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8905109489051094
+Trial 6 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8192771084337349
+Trial 6 Training NaiveBayesTrainer with 8223 instances
+Trial 6 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 6 Trainer NaiveBayesTrainer training data accuracy = 0.8943208074911833
+Trial 6 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.791894852135816 most-frequent-tag baseline=0.7502738225629791
+        label   0   1   2  |total
+  0  friendly 109   . 119  |228
+  1             .   .   .  |0
+  2 celebrity  69   2 614  |685
+
+Trial 6 Trainer NaiveBayesTrainer test data precision(friendly) = 0.6123595505617978
+Trial 6 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 6 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8376534788540245
+Trial 6 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4780701754385965
+No examples with true label !
+Trial 6 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 6 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.8963503649635036
+Trial 6 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5369458128078817
+No examples with true label !
+Trial 6 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 6 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8660084626234132
+Trial 6 Trainer NaiveBayesTrainer test data accuracy = 0.791894852135816
+
+-------------------- Trial 7  --------------------
+
+Trial 7 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5764.274328101007 prior=0.4999999999998558) loglikelihood = -57Value (labelProb=4998.947364504564 prior=1.3016908884312244) loglikelihood = -50Value (labelProb=4645.734827773953 prior=2.2223836447031657) loglikelihood = -46Value (labelProb=4374.990080668194 prior=3.950724586738561) loglikelihood = -437Value (labelProb=4137.263796942101 prior=8.455246841033038) loglikelihood = -414Value (labelProb=3899.403377380028 prior=16.81229461160391) loglikelihood = -391Value (labelProb=3673.7399181146466 prior=37.91670581349142) loglikelihood = -37Value (labelProb=3414.7578965737844 prior=85.23496218074843) loglikelihood = -34Value (labelProb=3161.367585136105 prior=181.92942877647224) loglikelihood = -33Value (labelProb=2966.1930574090293 prior=267.6649188244945) loglikelihood = -32Value (labelProb=3140.802920680668 prior=376.1967857048927) loglikelihood = -351Value (labelProb=2925.8921350502255 prior=289.09620214962786) loglikelihood = -3Value (labelProb=2876.4575855125327 prior=309.8823427644228) loglikelihood = -31Value (labelProb=2788.719883081141 prior=341.12187145122147) loglikelihood = -31Value (labelProb=2735.6135086492923 prior=354.078755798768) loglikelihood = -308Value (labelProb=2587.3857912214903 prior=395.191619480327) loglikelihood = -298Value (labelProb=2617.958804291169 prior=486.669303009062) loglikelihood = -3104Value (labelProb=2514.0302542084005 prior=421.9300313166061) loglikelihood = -29Value (labelProb=2448.882694894959 prior=461.736545834229) loglikelihood = -2910Value (labelProb=2396.430974916016 prior=478.1795122002017) loglikelihood = -287Value (labelProb=2387.2621321196343 prior=476.14627551118406) loglikelihood = -2Value (labelProb=2365.206811122321 prior=483.99805484719394) loglikelihood = -28Value (labelProb=2266.364532319238 prior=526.7603520213768) loglikelihood = -279Value (labelProb=2137.757220401703 prior=603.2113573966628) loglikelihood = -274Value (labelProb=2152.735430651559 prior=681.6565491813527) loglikelihood = -283Value (labelProb=2112.4630710410793 prior=619.5066280973929) loglikelihood = -27Value (labelProb=2072.1820500687036 prior=645.8674804722467) loglikelihood = -27Value (labelProb=2068.6880154015707 prior=645.9939785388063) loglikelihood = -27Value (labelProb=2061.5639477925497 prior=642.9787881129372) loglikelihood = -27Value (labelProb=2050.2135877533747 prior=634.627694459564) loglikelihood = -268Value (labelProb=2024.9487497743437 prior=673.875648909601) loglikelihood = -269Value (labelProb=2030.9279133638395 prior=647.3476725379479) loglikelihood = -26Value (labelProb=2005.356033265041 prior=654.7585046714503) loglikelihood = -266Value (labelProb=1959.5173743096395 prior=683.5961210137314) loglikelihood = -26Value (labelProb=1932.0629268440618 prior=698.9978467616397) loglikelihood = -26Value (labelProb=1871.2848941169525 prior=773.7780586497286) loglikelihood = -26Value (labelProb=1904.679823001197 prior=721.7198610521236) loglikelihood = -262Value (labelProb=1898.0716188560723 prior=723.6701574832565) loglikelihood = -26Value (labelProb=1907.2957761009832 prior=707.6996135318026) loglikelihood = -26Value (labelProb=1924.164568548571 prior=683.762658117479) loglikelihood = -2607Value (labelProb=1931.8740720088258 prior=673.7334696930077) loglikelihood = -26Value (labelProb=1943.44667315704 prior=657.955739782417) loglikelihood = -2601.Value (labelProb=1956.4047560740821 prior=639.7155622631844) loglikelihood = -25Value (labelProb=1990.2901822654076 prior=599.6487384931264) loglikelihood = -25Value (labelProb=1985.9318066812095 prior=596.3779679302646) loglikelihood = -25Value (labelProb=1982.772777479199 prior=597.0442256877234) loglikelihood = -257Value (labelProb=1979.817337487375 prior=598.2254868312831) loglikelihood = -257Value (labelProb=2014.684005469729 prior=562.0566055293474) loglikelihood = -257Value (labelProb=2015.437428990114 prior=568.1306425189658) loglikelihood = -258Value (labelProb=2008.7791378249678 prior=564.1859014080826) loglikelihood = -25Value (labelProb=2004.5572072716616 prior=576.5823943088142) loglikelihood = -25Value (labelProb=2004.3655167723298 prior=567.4022585604237) loglikelihood = -25Value (labelProb=1999.0101681641272 prior=572.3295632947963) loglikelihood = -25Value (labelProb=2005.981127981627 prior=566.9128514238089) loglikelihood = -257Value (labelProb=2000.2417765520934 prior=570.3612030963382) loglikelihood = -25Value (labelProb=1999.5200371507253 prior=570.500525270351) loglikelihood = -257Value (labelProb=2001.983618853985 prior=566.2173553032087) loglikelihood = -256Value (labelProb=2003.3964919812393 prior=564.9830363423263) loglikelihood = -25Value (labelProb=2002.289127709746 prior=565.6809972793252) loglikelihood = -2567.9701249890713 
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2568.2009741571937 newValue: -2567.9701249890713
+Value (labelProb=2721.140323442098 prior=564.7698906072028) loglikelihood = -328Value (labelProb=2008.8080947945969 prior=565.5448866121021) loglikelihood = -25Value (labelProb=2003.3892137129362 prior=565.6116919457027) loglikelihood = -25Value (labelProb=2002.2919229088213 prior=565.6460321124895) loglikelihood = -25Value (labelProb=2002.1575730188 prior=565.6344867014299) loglikelihood = -2567.7920597202296   
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2567.9379550213107 newValue: -2567.7920597202296
+
+Trial 7 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9183896862077353
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8413566739606126 most-frequent-tag baseline=0.7932166301969366
+        label   0   1   2  |total
+  0  friendly  55   . 134  |189
+  1             .   .   .  |0
+  2 celebrity  11   . 714  |725
+
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.8333333333333334
+No examples with predicted label !
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8419811320754716
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.291005291005291
+No examples with true label !
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9848275862068966
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4313725490196078
+No examples with predicted label !
+No examples with true label !
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.9078194532739987
+Trial 7 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8413566739606126
+Trial 7 Training NaiveBayesTrainer with 8222 instances
+Trial 7 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 7 Trainer NaiveBayesTrainer training data accuracy = 0.8946728289953783
+Trial 7 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8304157549234136 most-frequent-tag baseline=0.7932166301969366
+        label   0   1   2  |total
+  0  friendly  88   . 101  |189
+  1             .   .   .  |0
+  2 celebrity  53   1 671  |725
+
+Trial 7 Trainer NaiveBayesTrainer test data precision(friendly) = 0.624113475177305
+Trial 7 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 7 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8691709844559585
+Trial 7 Trainer NaiveBayesTrainer test data recall(friendly) = 0.4656084656084656
+No examples with true label !
+Trial 7 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 7 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9255172413793104
+Trial 7 Trainer NaiveBayesTrainer test data F1(friendly) = 0.5333333333333333
+No examples with true label !
+Trial 7 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 7 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8964595858383433
+Trial 7 Trainer NaiveBayesTrainer test data accuracy = 0.8304157549234136
+
+-------------------- Trial 8  --------------------
+
+Trial 8 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8223 instances
+Value (labelProb=5755.980579065404 prior=0.5000000000000694) loglikelihood = -57Value (labelProb=4989.312171790313 prior=1.3005713353696535) loglikelihood = -49Value (labelProb=4636.205048506478 prior=2.2178511511430625) loglikelihood = -46Value (labelProb=4364.123162391532 prior=3.944065333880105) loglikelihood = -436Value (labelProb=4124.231417297407 prior=8.448283797933389) loglikelihood = -413Value (labelProb=3891.899609199611 prior=16.676542184473195) loglikelihood = -39Value (labelProb=3673.0607458711506 prior=37.03060600154819) loglikelihood = -37Value (labelProb=3407.5106282722295 prior=83.67896733258264) loglikelihood = -34Value (labelProb=3141.8395495168065 prior=184.4207263452228) loglikelihood = -33Value (labelProb=2943.3281755211374 prior=266.906830321261) loglikelihood = -321Value (labelProb=2996.0046614994158 prior=340.59660290073) loglikelihood = -3336Value (labelProb=2910.7690717459673 prior=284.63277139721845) loglikelihood = -3Value (labelProb=2837.295469884435 prior=321.17176820717305) loglikelihood = -31Value (labelProb=2734.615639792079 prior=365.9602446388077) loglikelihood = -310Value (labelProb=2647.52089321663 prior=398.1118846862304) loglikelihood = -3045Value (labelProb=2546.0939878400372 prior=422.6374692152714) loglikelihood = -29Value (labelProb=4464.271026334382 prior=334.7151249819344) loglikelihood = -479Value (labelProb=2546.5653383286594 prior=412.02915211451244) loglikelihood = -2Value (labelProb=2489.9519533398193 prior=410.0294450443817) loglikelihood = -28Value (labelProb=2481.287506840168 prior=384.6103030564975) loglikelihood = -286Value (labelProb=2473.3945758321383 prior=368.4159154624298) loglikelihood = -28Value (labelProb=2470.0056088634565 prior=342.81970047143176) loglikelihood = -2Value (labelProb=2449.594294072963 prior=329.15820710588395) loglikelihood = -27Value (labelProb=2453.3796869276457 prior=305.3321509246097) loglikelihood = -27Value (labelProb=2420.8688144926973 prior=320.09775970723945) loglikelihood = -2Value (labelProb=2407.866828739577 prior=324.2862180498353) loglikelihood = -273Value (labelProb=2403.3031480998975 prior=327.866635936518) loglikelihood = -273Value (labelProb=2357.1595181622974 prior=332.7296495859114) loglikelihood = -26Value (labelProb=2354.327944371741 prior=329.8992588485127) loglikelihood = -268Value (labelProb=2350.136103566046 prior=325.8113218957635) loglikelihood = -267Value (labelProb=2340.4038995641517 prior=324.19543463359224) loglikelihood = -2Value (labelProb=2326.363661409448 prior=324.9894433915459) loglikelihood = -265Value (labelProb=2291.048809308899 prior=343.06441045626315) loglikelihood = -26Value (labelProb=2247.5430043206425 prior=360.25566114100496) loglikelihood = -2Value (labelProb=2239.1424632999815 prior=362.92715802517336) loglikelihood = -2Value (labelProb=2225.716220709624 prior=373.67510293635615) loglikelihood = -25Value (labelProb=2217.5165377462818 prior=374.5089188905436) loglikelihood = -25Value (labelProb=2210.3909303902215 prior=377.87888158140254) loglikelihood = -2Value (labelProb=2197.23353637341 prior=386.9797221557637) loglikelihood = -2584Value (labelProb=2184.4473590829407 prior=398.93079488659754) loglikelihood = -2Value (labelProb=2184.0247028937856 prior=396.1741123752935) loglikelihood = -25Value (labelProb=2179.845557880816 prior=398.0990760880986) loglikelihood = -257Value (labelProb=2169.906458870909 prior=405.32654097153033) loglikelihood = -25Value (labelProb=2159.343559068705 prior=413.15389882310416) loglikelihood = -25Value (labelProb=2137.77195322725 prior=429.67126530851954) loglikelihood = -256Value (labelProb=2119.665289772133 prior=447.5604156058137) loglikelihood = -2567.2257053779467
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2567.4432185357696 newValue: -2567.2257053779467
+Value (labelProb=3052.7977385191257 prior=448.80160703581964) loglikelihood = -3Value (labelProb=2116.8496236611295 prior=447.6395347488313) loglikelihood = -25Value (labelProb=2115.146548168205 prior=447.7087775245508) loglikelihood = -256Value (labelProb=2114.4479858667 prior=447.83795157709415) loglikelihood = -2562Value (labelProb=2111.500650825628 prior=448.6824722089445) loglikelihood = -256Value (labelProb=2109.4213141887994 prior=449.6210637605941) loglikelihood = -25Value (labelProb=2106.052097322533 prior=451.6865325191534) loglikelihood = -255Value (labelProb=2102.5581319938324 prior=454.17981875643034) loglikelihood = -2Value (labelProb=2096.0022726948896 prior=459.48452694506994) loglikelihood = -2Value (labelProb=2090.611669270126 prior=467.6662812155107) loglikelihood = -255Value (labelProb=2093.3087285270044 prior=461.7086618759192) loglikelihood = -25Value (labelProb=2090.2500288524193 prior=464.0683723834623) loglikelihood = -25Value (labelProb=2086.595641735552 prior=467.01555687483) loglikelihood = -2553.Value (labelProb=2083.8980712559346 prior=469.27418636334016) loglikelihood = -2Value (labelProb=2078.4317597797813 prior=473.90566158057675) loglikelihood = -2Value (labelProb=2069.580701953281 prior=481.64259358133796) loglikelihood = -25Value (labelProb=2053.2124795283976 prior=502.0364841585545) loglikelihood = -25Value (labelProb=2064.8501196125253 prior=486.0311141117697) loglikelihood = -25Value (labelProb=2056.979560481288 prior=493.12841631150496) loglikelihood = -25Value (labelProb=2047.6649917127559 prior=501.5262946930352) loglikelihood = -25Value (labelProb=2033.9027587756011 prior=513.9729728739569) loglikelihood = -25Value (labelProb=2012.7455157570623 prior=535.1010520257261) loglikelihood = -2547.8465677827885
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2547.875731649558 newValue: -2547.8465677827885
+
+Trial 8 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with true label !
+No examples with predicted label !
+No examples with true label !
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9183996108476226
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8269441401971522 most-frequent-tag baseline=0.7842278203723987
+        label   0   1   2  |total
+  0  friendly  56   . 141  |197
+  1             .   .   .  |0
+  2 celebrity  17   . 699  |716
+
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.7671232876712328
+No examples with predicted label !
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8321428571428572
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.28426395939086296
+No examples with true label !
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 1.0
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9762569832402235
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.41481481481481486
+No examples with predicted label !
+No examples with true label !
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 1.0
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.898457583547558
+Trial 8 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8269441401971522
+Trial 8 Training NaiveBayesTrainer with 8223 instances
+Trial 8 Training NaiveBayesTrainer finished
+No examples with true label !
+No examples with true label !
+Trial 8 Trainer NaiveBayesTrainer training data accuracy = 0.8963881794965342
+Trial 8 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8028477546549836 most-frequent-tag baseline=0.7842278203723987
+        label   0   1   2  |total
+  0  friendly  81   . 116  |197
+  1             .   .   .  |0
+  2 celebrity  63   1 652  |716
+
+Trial 8 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5625
+Trial 8 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 8 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8489583333333334
+Trial 8 Trainer NaiveBayesTrainer test data recall(friendly) = 0.41116751269035534
+No examples with true label !
+Trial 8 Trainer NaiveBayesTrainer test data recall() = 1.0
+Trial 8 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.9106145251396648
+Trial 8 Trainer NaiveBayesTrainer test data F1(friendly) = 0.4750733137829912
+No examples with true label !
+Trial 8 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 8 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8787061994609164
+Trial 8 Trainer NaiveBayesTrainer test data accuracy = 0.8028477546549836
+
+-------------------- Trial 9  --------------------
+
+Trial 9 Training MaxEntTrainer,gaussianPriorVariance=1.0 with 8222 instances
+Value (labelProb=5739.645196891341 prior=0.49999999999984535) loglikelihood = -5Value (labelProb=4966.996420207392 prior=1.3034429293448748) loglikelihood = -49Value (labelProb=4614.024250575569 prior=2.216941983772305) loglikelihood = -461Value (labelProb=4341.655202446761 prior=3.9387287767637638) loglikelihood = -43Value (labelProb=4106.235467265971 prior=8.299992461683203) loglikelihood = -411Value (labelProb=3885.8429707638984 prior=16.102610983362545) loglikelihood = -3Value (labelProb=3660.930416805534 prior=36.356271951568424) loglikelihood = -36Value (labelProb=3365.7804995082765 prior=87.40659067838831) loglikelihood = -34Value (labelProb=3095.226611471311 prior=196.04797176954077) loglikelihood = -32Value (labelProb=2929.5498140493532 prior=265.43932561294565) loglikelihood = -3Value (labelProb=2845.470922006246 prior=315.6521592702122) loglikelihood = -316Value (labelProb=2755.968780662136 prior=359.76696580983423) loglikelihood = -31Value (labelProb=2717.915367180869 prior=366.251557895774) loglikelihood = -3084Value (labelProb=2671.396023472253 prior=358.1405535831191) loglikelihood = -302Value (labelProb=2548.9713390219686 prior=388.0759719630249) loglikelihood = -29Value (labelProb=2488.5345005902323 prior=654.7682964650069) loglikelihood = -31Value (labelProb=2475.8533849996466 prior=441.7139992636657) loglikelihood = -29Value (labelProb=2413.5749118625536 prior=480.9884116192303) loglikelihood = -28Value (labelProb=2350.6648816283227 prior=528.3933798235677) loglikelihood = -28Value (labelProb=2316.028919611481 prior=549.0729508713135) loglikelihood = -286Value (labelProb=2263.484073109816 prior=563.0390240193644) loglikelihood = -282Value (labelProb=2276.1300578604832 prior=510.3486432347579) loglikelihood = -27Value (labelProb=2237.123017134465 prior=519.9308361433989) loglikelihood = -275Value (labelProb=2249.629350370896 prior=489.5902873018565) loglikelihood = -273Value (labelProb=2269.4354678360996 prior=455.3644620066801) loglikelihood = -27Value (labelProb=2249.013912090963 prior=444.60686797345977) loglikelihood = -26Value (labelProb=2236.316452338952 prior=452.09156160156647) loglikelihood = -26Value (labelProb=2162.0590484087056 prior=479.8260539535986) loglikelihood = -26Value (labelProb=2140.7729665613324 prior=496.1505188403533) loglikelihood = -26Value (labelProb=2101.1680847237253 prior=525.8709707303071) loglikelihood = -26Value (labelProb=2051.304257652925 prior=551.5760130219137) loglikelihood = -260Value (labelProb=1998.3961736981894 prior=766.6557449615285) loglikelihood = -27Value (labelProb=2020.8076920679464 prior=576.2606382421105) loglikelihood = -25Value (labelProb=2008.7637860267598 prior=582.7771589022236) loglikelihood = -25Value (labelProb=2021.3991566287016 prior=566.2905394771841) loglikelihood = -25Value (labelProb=2026.0999821953433 prior=560.4345608081298) loglikelihood = -25Value (labelProb=2034.416894932027 prior=536.633853608327) loglikelihood = -2571Value (labelProb=2167.7561982166408 prior=448.50333459506936) loglikelihood = -2Value (labelProb=2053.4785162883863 prior=511.072060006671) loglikelihood = -256Value (labelProb=2034.2234172058247 prior=524.6817053859207) loglikelihood = -25Value (labelProb=2029.3317640009814 prior=535.0509459388345) loglikelihood = -25Value (labelProb=2030.7061957922247 prior=527.3953644595849) loglikelihood = -25Value (labelProb=2033.7816074221878 prior=523.5200773753703) loglikelihood = -25Value (labelProb=2037.6380291759606 prior=516.824894268985) loglikelihood = -255Value (labelProb=2037.6258103288549 prior=514.633274889648) loglikelihood = -255Value (labelProb=2036.907243344819 prior=514.750517913982) loglikelihood = -2551Value (labelProb=2033.8384101912063 prior=515.3063615473764) loglikelihood = -25Value (labelProb=2030.573725146392 prior=516.999817610575) loglikelihood = -2547Value (labelProb=2038.7721803678107 prior=519.3050270677861) loglikelihood = -25Value (labelProb=2029.988098236815 prior=517.2919756086472) loglikelihood = -254Value (labelProb=2028.947283200654 prior=518.0507849675447) loglikelihood = -254Value (labelProb=2027.9338419425285 prior=518.7018105836814) loglikelihood = -25Value (labelProb=2024.9370050081964 prior=521.0484420142308) loglikelihood = -25Value (labelProb=2023.4999412039563 prior=521.9711720935798) loglikelihood = -25Value (labelProb=2022.8048284195727 prior=522.470043439088) loglikelihood = -2545.274871858661  
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2545.4711132975362 newValue: -2545.274871858661
+Value (labelProb=3014.271129255598 prior=523.3412786579488) loglikelihood = -353Value (labelProb=2029.3078634233675 prior=522.5121669609587) loglikelihood = -25Value (labelProb=2022.6701641683726 prior=522.4738057912623) loglikelihood = -25Value (labelProb=2022.6227967600373 prior=522.4885741061721) loglikelihood = -2545.1113708662097
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -2545.143969959635 newValue: -2545.1113708662097
+
+Trial 9 Training MaxEntTrainer,gaussianPriorVariance=1.0 finished
+
+No examples with predicted label !
+No examples with predicted label !
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 training data accuracy = 0.9180248114813914
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.8194748358862144 most-frequent-tag baseline=0.7658643326039387
+        label   0   1   2  |total
+  0  friendly  64   . 148  |212
+  1             .   .   2  |2
+  2 celebrity  15   . 685  |700
+
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(friendly) = 0.810126582278481
+No examples with predicted label !
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision() = 1.0
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data precision(celebrity) = 0.8203592814371258
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(friendly) = 0.3018867924528302
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall() = 0.0
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data recall(celebrity) = 0.9785714285714285
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(friendly) = 0.4398625429553264
+No examples with predicted label !
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1() = 0.0
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data F1(celebrity) = 0.8925081433224756
+Trial 9 Trainer MaxEntTrainer,gaussianPriorVariance=1.0 test data accuracy = 0.8194748358862144
+Trial 9 Training NaiveBayesTrainer with 8222 instances
+Trial 9 Training NaiveBayesTrainer finished
+Trial 9 Trainer NaiveBayesTrainer training data accuracy = 0.8954025784480661
+Trial 9 Trainer NaiveBayesTrainer Test Data Confusion Matrix
+Confusion Matrix, row=true, column=predicted  accuracy=0.7899343544857768 most-frequent-tag baseline=0.7658643326039387
+        label   0   1   2  |total
+  0  friendly  94   1 117  |212
+  1             .   .   2  |2
+  2 celebrity  72   . 628  |700
+
+Trial 9 Trainer NaiveBayesTrainer test data precision(friendly) = 0.5662650602409639
+Trial 9 Trainer NaiveBayesTrainer test data precision() = 0.0
+Trial 9 Trainer NaiveBayesTrainer test data precision(celebrity) = 0.8406961178045516
+Trial 9 Trainer NaiveBayesTrainer test data recall(friendly) = 0.44339622641509435
+Trial 9 Trainer NaiveBayesTrainer test data recall() = 0.0
+Trial 9 Trainer NaiveBayesTrainer test data recall(celebrity) = 0.8971428571428571
+Trial 9 Trainer NaiveBayesTrainer test data F1(friendly) = 0.4973544973544973
+Trial 9 Trainer NaiveBayesTrainer test data F1() = 0.0
+Trial 9 Trainer NaiveBayesTrainer test data F1(celebrity) = 0.8680027643400139
+Trial 9 Trainer NaiveBayesTrainer test data accuracy = 0.7899343544857768
+
+MaxEntTrainer,gaussianPriorVariance=1.0
+Summary. train accuracy mean = 0.9170315206858634 stddev = 0.0011106378521200475 stderr = 3.512145268296618E-4
+Summary. test accuracy mean = 0.8268373673728133 stddev = 0.012662471609860834 stderr = 0.004004225109437924
+Summary. test precision(friendly) mean = 0.8182229103103307 stddev = 0.0448525484853797 stderr = 0.01418362120769353
+Summary. test precision() mean = 1.0 stddev = 0.0 stderr = 0.0
+Summary. test precision(celebrity) mean = 0.8277738116588409 stddev = 0.013977141448480697 stderr = 0.004419960215554401
+Summary. test recall(friendly) mean = 0.308198247002325 stddev = 0.03248563040270511 stderr = 0.010272858329896106
+Summary. test recall() mean = 0.9 stddev = 0.3 stderr = 0.09486832980505137
+Summary. test recall(celebrity) mean = 0.9797536073232151 stddev = 0.005637822548077441 stderr = 0.0017828360295778858
+Summary. test f1(friendly) mean = 0.4465958866077601 stddev = 0.0348820700761491 stderr = 0.011030679094223422
+Summary. test f1() mean = 0.9 stddev = 0.3 stderr = 0.09486832980505137
+Summary. test f1(celebrity) mean = 0.8972966000996706 stddev = 0.008155391267707925 stderr = 0.002578961161580505
+
+NaiveBayesTrainer
+Summary. train accuracy mean = 0.8937658026964431 stddev = 0.001334230132461795 stderr = 4.219206141407432E-4
+Summary. test accuracy mean = 0.8069159071136347 stddev = 0.013143868697974227 stderr = 0.004156456235179034
+Summary. test precision(friendly) mean = 0.5999341995733974 stddev = 0.03822099130991988 stderr = 0.012086538696884938
+Summary. test precision() mean = 0.1 stddev = 0.30000000000000004 stderr = 0.09486832980505139
+Summary. test precision(celebrity) mean = 0.8527945138773365 stddev = 0.00994726941985423 stderr = 0.00314560278660811
+Summary. test recall(friendly) mean = 0.4670944095517127 stddev = 0.02385203624281467 stderr = 0.0075426761360179355
+Summary. test recall() mean = 0.9 stddev = 0.3 stderr = 0.09486832980505137
+Summary. test recall(celebrity) mean = 0.9068449689979609 stddev = 0.011435796810343575 stderr = 0.0036163164779574293
+Summary. test f1(friendly) mean = 0.5249590454856257 stddev = 0.027585141462710756 stderr = 0.008723187660011471
+Summary. test f1() mean = 0.1 stddev = 0.30000000000000004 stderr = 0.09486832980505139
+Summary. test f1(celebrity) mean = 0.8789638389767257 stddev = 0.009555713382473182 stderr = 0.003021781895636696

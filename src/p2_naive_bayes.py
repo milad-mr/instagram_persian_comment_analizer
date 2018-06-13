@@ -9,7 +9,7 @@ friendly_cms = friendly_str.split("', '")
 
 celebrity_str = open("../data/celebrity_comments", "r").read()
 celebrity_cms = celebrity_str.split("', '")
-smothing = False
+smoothing = False
 #prepare testcases
 tc_celebrity_cms = []
 tc_friendly_cms = []
@@ -39,7 +39,7 @@ print("celebrity comments #: ", len(celebrity_cms), ", words #: ", len(celebrity
 
 def p_word_in_class(w, c):
     #c is list of words 
-    if(smothing):
+    if(smoothing):
         return (c.count(w) + 1)/ len(c)
     return (c.count(w))/ len(c)
 
@@ -87,15 +87,17 @@ def precision(tc_target_cms, tc_other_cms, type):
     return tp / pos
 
 
-print ("without smothing")
+
+#get result on test lists
+print ("without smoothing")
 print("celebrity:  precision is : ", precision(tc_celebrity_cms, tc_friendly_cms, "celebrity"), "recall is:", recall(tc_celebrity_cms, "celebrity"))
 print("friendly:  precision is : ", precision(tc_friendly_cms, tc_celebrity_cms, "friendly"), "recall is:", recall(tc_friendly_cms, "friendly"))
 
 
 
-print ("with smothing")
+print ("with smoothing")
 
-smothing = True
+smoothing = True
 print("celebrity:  precision is : ", precision(tc_celebrity_cms, tc_friendly_cms, "celebrity"), "recall is:", recall(tc_celebrity_cms, "celebrity"))
 print("friendly:  precision is : ", precision(tc_friendly_cms, tc_celebrity_cms, "friendly"), "recall is:", recall(tc_friendly_cms, "friendly"))
 
