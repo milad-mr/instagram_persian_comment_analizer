@@ -2,16 +2,33 @@ import re #regular expression
 import random
 #file_friendly_comments = open("../data/friendly_comments", "r")
 
-
+test_rate = 10
 #preparing data
 friendly_str = open("../data/friendly_comments", "r").read()
 friendly_cms = friendly_str.split("', '")
-friendly_wrd = []
-for cm in friendly_cms:
-    friendly_wrd += re.findall(r"[\w']+", cm)
-    
+
 celebrity_str = open("../data/celebrity_comments", "r").read()
 celebrity_cms = celebrity_str.split("', '")
+smothing = False
+#prepare testcases
+tc_celebrity_cms = []
+tc_friendly_cms = []
+test_case_count = 200
+for _ in range(test_case_count):
+    tc_celebrity_cms.append(celebrity_cms.pop(random.randint(0, len(celebrity_cms) - 1)))
+    tc_friendly_cms.append(friendly_cms.pop(random.randint(0, len(friendly_cms) - 1)))
+
+# for i in range(len(friendly_cms)):
+#     if i % test_rate == 0:
+#         friendly_cms_test.append(friendly_cms.pop(i))
+friendly_wrd = []
+for cm in friendly_cms:
+    # if i % test_rate == 0:
+    #     friendly_cms_test.append(cm)
+    #     friendly_cms.remove(cm)
+    friendly_wrd += re.findall(r"[\w']+", cm)
+    
+
 celebrity_wrd = []
 for cm in celebrity_cms:
     celebrity_wrd += re.findall(r"[\w']+", cm)
@@ -19,9 +36,12 @@ for cm in celebrity_cms:
 print("friendly comments #: ", len(friendly_cms), ", words # : ", len(friendly_wrd))
 print("celebrity comments #: ", len(celebrity_cms), ", words #: ", len(celebrity_wrd))
 
+
 def p_word_in_class(w, c):
     #c is list of words 
-    return (c.count(w) + 1)/ len(c)
+    if(smothing):
+        return (c.count(w) + 1)/ len(c)
+    return (c.count(w))/ len(c)
 
 def p_class(c, classes):
     total_wrd_count = 0
@@ -66,16 +86,17 @@ def precision(tc_target_cms, tc_other_cms, type):
             pos += 1
     return tp / pos
 
-tc_celebrity_cms = []
-tc_friendly_cms = []
-test_case_count = 200
-for _ in range(test_case_count):
-    tc_celebrity_cms.append(celebrity_cms.pop(random.randint(0, len(celebrity_cms) - 1)))
-    tc_friendly_cms.append(friendly_cms.pop(random.randint(0, len(friendly_cms) - 1)))
 
-
+print ("without smothing")
 print("celebrity:  precision is : ", precision(tc_celebrity_cms, tc_friendly_cms, "celebrity"), "recall is:", recall(tc_celebrity_cms, "celebrity"))
+print("friendly:  precision is : ", precision(tc_friendly_cms, tc_celebrity_cms, "friendly"), "recall is:", recall(tc_friendly_cms, "friendly"))
 
+
+
+print ("with smothing")
+
+smothing = True
+print("celebrity:  precision is : ", precision(tc_celebrity_cms, tc_friendly_cms, "celebrity"), "recall is:", recall(tc_celebrity_cms, "celebrity"))
 print("friendly:  precision is : ", precision(tc_friendly_cms, tc_celebrity_cms, "friendly"), "recall is:", recall(tc_friendly_cms, "friendly"))
 
 # pr_celebrity = 0
