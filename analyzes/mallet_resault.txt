@@ -843,3 +843,13 @@ Summary. test recall(celebrity) mean = 0.9068449689979609 stddev = 0.01143579681
 Summary. test f1(friendly) mean = 0.5249590454856257 stddev = 0.027585141462710756 stderr = 0.008723187660011471
 Summary. test f1() mean = 0.1 stddev = 0.30000000000000004 stderr = 0.09486832980505139
 Summary. test f1(celebrity) mean = 0.8789638389767257 stddev = 0.009555713382473182 stderr = 0.003021781895636696
+
+
+
+
+
+
+
+tr 'ئ‌' 'ی' < ../data/raw_celebrity_comments | tr '‌' ' ' | tr -sc "A-Za-zضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپوائ '.,-" " " | tr -s [:space:] " " | tr [:upper:] [:lower:] | tr -s "A-Za-zض‌صثقفغعهخحجچشسیبلاتنمکگظطزرذدپو '.,-" > ../data/celebrity_comments
+
+tr 'ئ‌' 'ی' < ../data/raw_friendly_comments | tr '‌' ' ' | tr -sc "A-Za-zض‌صثقفغعهخحجچشسیبلاتنمکگظطزرذدپو '.,-" "‌‌"  | tr -s [:space:] " " |  tr [:upper:] [:lower:] | tr -s "A-Za-zض‌صثقفغعهخحجچشسیبلاتنمکگظطزرذدپو '.,-" > ../data/friendly_comments

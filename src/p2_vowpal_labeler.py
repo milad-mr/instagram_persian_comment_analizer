@@ -11,14 +11,23 @@ sample_rate = 10
 
 
 
+# for i in range(min(len(friendly_cms), len(celebrity_cms))):
+#     if i % sample_rate == 0: #this is test case
+#        print("-1 | " + celebrity_cms[i] , file = test_cm_out_file)
+#     else: 
+#        print("-1 | " + celebrity_cms[i] , file = labaled_cm_out_file)
+     
+# for i in range(len(friendly_cms)):
+#     if i % sample_rate == 0:
+#        print("1 | " + friendly_cms[i] , file = test_cm_out_file)
+#     else:  
+#         print("1 | " + friendly_cms[i] , file = labaled_cm_out_file)
+
+
 for i in range(min(len(friendly_cms), len(celebrity_cms))):
     if i % sample_rate == 0: #this is test case
        print("-1 | " + celebrity_cms[i] , file = test_cm_out_file)
+       print("1 | " + friendly_cms[i] , file = test_cm_out_file)
     else: 
        print("-1 | " + celebrity_cms[i] , file = labaled_cm_out_file)
-     
-for i in range(len(friendly_cms)):
-    if i % sample_rate == 0:
-       print("1 | " + friendly_cms[i] , file = test_cm_out_file)
-    else:  
-        print("1 | " + friendly_cms[i] , file = labaled_cm_out_file)
+       print("1 | " + friendly_cms[i] , file = labaled_cm_out_file)
